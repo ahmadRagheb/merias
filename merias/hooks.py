@@ -87,6 +87,16 @@ app_license = "MIT"
 #	}
 # }
 
+doc_events = {
+	"Sales Order": {
+		"on_update": "merias.api.check_availability_for_items_based_on_booked",
+		# "on_submit": "merias.api.check_availability_for_items",
+	},"Sales Invoice": {
+		"on_update": "merias.api.si_for_items_based_on_booked",
+		# "on_submit": "merias.api.check_availability_for_items",
+	},
+}
+
 # Scheduled Tasks
 # ---------------
 
