@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include merias *.css
+recursive-include merias *.csv
+recursive-include merias *.html
+recursive-include merias *.ico
+recursive-include merias *.js
+recursive-include merias *.json
+recursive-include merias *.md
+recursive-include merias *.png
+recursive-include merias *.py
+recursive-include merias *.svg
+recursive-include merias *.txt
+recursive-exclude merias *.pyc
