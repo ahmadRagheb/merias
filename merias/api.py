@@ -10,8 +10,6 @@ from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_t
 from frappe import _
 from six.moves.urllib.parse import urlparse, urlencode
 import base64
-
-
 		
 
 def check_availability_for_items_based_on_booked(doc, method):
