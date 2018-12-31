@@ -92,9 +92,14 @@ doc_events = {
 		"on_update": "merias.api.check_availability_for_items_based_on_booked",
 		# "on_submit": "merias.api.check_availability_for_items",
 	},"Sales Invoice": {
-		"on_update": "merias.api.si_for_items_based_on_booked",
+		# "on_update": "merias.api.si_for_items_based_on_booked",
+		"on_submit": "merias.api.si_for_items_based_on_booked",
 		# "on_submit": "merias.api.check_availability_for_items",
-	}
+	},"Delivery Note": {
+		"on_submit": "merias.api.check_availability_for_items_based_on_booked",
+	},"Stock Entry": {
+		"on_submit": "merias.api.stock_entry",
+	},
 }
 
 # Scheduled Tasks
@@ -117,6 +122,23 @@ doc_events = {
 # 		"merias.tasks.monthly"
 # 	]
 # }
+scheduler_events = {
+	# "all": [
+	# 	"merias.tasks.all"
+	# ],
+	# "daily": [
+	# 	"merias.tasks.daily"
+	# ],
+	"hourly": [
+		"merias.tasks.hourly"
+	],
+	# "weekly": [
+	# 	"merias.tasks.weekly"
+	# ]
+	# "monthly": [
+	# 	"merias.tasks.monthly"
+	# ]
+}
 
 # Testing
 # -------
@@ -128,5 +150,4 @@ doc_events = {
 #
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "merias.event.get_events"
-# }
-
+# }	
