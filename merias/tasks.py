@@ -9,7 +9,8 @@ from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_t
 def hourly():
 	blocked_so = frappe.db.sql('''SELECT so.name FROM `tabSales Order` so
 		LEFT JOIN `tabSales Order Item` smi ON so.name = smi.parent and
-		smi.is_blocked = 1 and so.status <> 'Cancelled' ''',as_dict=True)
+		smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',as_dict=True)
+
 	so = tuple([x.name for x in blocked_so ])
 	message = "Hi, There is not collected Sales Order {}".format(so)
 	user_list = frappe.get_all('User',filters={'enabled':1})
