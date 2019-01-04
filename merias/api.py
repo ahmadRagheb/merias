@@ -13,13 +13,14 @@ def stock_entry(doc, method):
 	"""
 	if doc.purpose == "Material Transfer":
 		for d in doc.get('items'):
+			
 			bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so 
 			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
 			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',
-			(d.item_code, d.warehouse)
+			(d.item_code, d.s_warehouse)
 			)
 
-			blocked_qty = flt(blocked_qty[0][0]) or 0
+			blocked_qty = flt(bloked_qty[0][0]) or 0
 			
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
 				where item_code = %s and warehouse = %s", (str(d.item_code), str(d.s_warehouse)))
