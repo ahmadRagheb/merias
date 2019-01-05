@@ -150,6 +150,6 @@ scheduler_events = {
 #
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "merias.event.get_events"
-# }	
+# ]
 
 fixtures = ["Custom Script","Custom Field"]
