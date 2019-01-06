@@ -12,9 +12,9 @@
   "docstatus": 0, 
   "doctype": "Custom Script", 
   "dt": "Sales Order", 
-  "modified": "2019-01-06 13:46:51.100116", 
+  "modified": "2019-01-06 14:05:11.248020", 
   "name": "Sales Order-Client", 
-  "script": "var i =false;\n        \nfrappe.ui.form.on('Sales Order Item', {\n   items_remove: function(frm) {\n        console.log(\"delete\");\n        frm.save();\n\n    },\n    items_add: function(frm) {\n        if(i){\n            console.log(\"add new row\");\n            i =false;\n\n            cur_frm.doc.items.splice(-1,1)\n            frm.refresh_fields();\n            frm.save();\n        }else{\n        i=true;\n        }\n    }\n});\n", 
+  "script": "var i =false;\n        \nfrappe.ui.form.on('Sales Order Item', {\n   items_remove: function(frm) {\n        console.log(\"delete\");\n        frm.save();\n\n    },\n    items_add: function(frm) {\n        if(i){\n            console.log(\"add new row\");\n            i =false;\n\n            cur_frm.doc.items.splice(-1,1)\n            frm.refresh_fields();\n            frm.save();\n        }else{\n        i=true;\n        }\n    }\n});\n\nfrappe.ui.form.on('Sales Order', {\n    refresh: function(frm) {\n  window.scrollBy(0, 900);\n    } \n});\n\n\n", 
   "script_type": "Client"
  }
 ]
