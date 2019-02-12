@@ -15,8 +15,9 @@ def hourly():
 	message = "Hi, There is not collected Sales Order {}".format(so)
 	user_list = frappe.get_all('User',filters={'enabled':1})
 	for user in user_list:
-		roles = [ur.role for ur in user.roles]
+		user_obj = frappe.get_doc('User',user.name)
+		roles = [ur.role for ur in user_obj.roles]
 		if ("Sales User" in roles) or ("Sales Manager" in roles):
-			frappe.publish_realtime(event='eval_js', message='alert("{0}")'.format(message),
+			frappe.publish_realtime(event='eval_js', message='frappe.msgprint("{0}")'.format(message),
 				user=user['name'])
 
