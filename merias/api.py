@@ -97,8 +97,8 @@ def si_for_items_based_on_booked(doc, method):
 		actual_qty = flt(actual_qty[0][0]) or 0
 		projected_qty = flt(projected_qty[0][0]) or 0
 
-		real_blocked_qty = bloked_qty - d.stock_qty 
+		real_blocked_qty = actual_qty - bloked_qty 
 
-		if real_blocked_qty < 0 :
+		if d.stock_qty > real_blocked_qty :
 			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-				d.item_code, d.stock_qty, real_blocked_qty + d.stock_qty))
+				d.item_code, d.stock_qty, real_blocked_qty))
