@@ -99,6 +99,7 @@ doc_events = {
 	# 	"on_submit": "merias.api.check_availability_for_items_based_on_booked",
 	},"Stock Entry": {
 		"on_submit": "merias.api.stock_entry",
+		"validate": "merias.api.workflow",
 	},
 }
 
@@ -152,4 +153,4 @@ scheduler_events = {
 # 	"frappe.desk.doctype.event.event.get_events": "merias.event.get_events"
 # ]
 
-fixtures = ["Custom Script","Custom Field"]
+fixtures = ["Custom Script","Custom Field", "Workflow"]

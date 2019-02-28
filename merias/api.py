@@ -6,6 +6,19 @@ import frappe.client
 from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_to_form
 
 
+def workflow(doc, method):
+	checker = doc.difference_exist
+	value = flt(doc.total_outgoing_value)
+	if(checker):
+		if(value<100):
+			doc.workflow_state = "New(2t)"
+		elif(100<value and value<1000):
+			doc.workflow_state = "New(3t)"
+		else:
+			doc.workflow_state = "New(3t)"
+	else:
+		doc.workflow_state = "New"
+
 def stock_entry(doc, method):
 	""" by defult system check if item qty in warehouse >= transfered qty from that warehouse
 		if okay then we add transfer with actuall qty then this will give us the totall
