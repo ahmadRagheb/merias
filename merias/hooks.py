@@ -153,4 +153,4 @@ scheduler_events = {
 # 	"frappe.desk.doctype.event.event.get_events": "merias.event.get_events"
 # ]
 
-fixtures = ["Custom Script","Custom Field", "Workflow"]
+fixtures = ["Custom Script","Custom Field", "Workflow State", "Workflow"]

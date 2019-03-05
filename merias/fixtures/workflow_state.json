@@ -1,0 +1,155 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "question-sign", 
+  "modified": "2019-02-25 13:48:50.991916", 
+  "name": "Pending", 
+  "style": "", 
+  "workflow_state_name": "Pending"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "ok-sign", 
+  "modified": "2019-02-25 13:48:50.994291", 
+  "name": "Approved", 
+  "style": "Success", 
+  "workflow_state_name": "Approved"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "remove", 
+  "modified": "2019-02-25 13:48:50.996375", 
+  "name": "Rejected", 
+  "style": "Danger", 
+  "workflow_state_name": "Rejected"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:40:27.154529", 
+  "name": "New", 
+  "style": "", 
+  "workflow_state_name": "New"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:41:05.503699", 
+  "name": "Approved By Stock Manager", 
+  "style": "", 
+  "workflow_state_name": "Approved By Stock Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:42:21.998787", 
+  "name": "Rejected By Stock Manager", 
+  "style": "", 
+  "workflow_state_name": "Rejected By Stock Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:43:00.026735", 
+  "name": "Approved By Finance Manager", 
+  "style": "", 
+  "workflow_state_name": "Approved By Finance Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:43:24.960781", 
+  "name": "Approved By Accounts Manager", 
+  "style": "", 
+  "workflow_state_name": "Approved By Accounts Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:44:40.631249", 
+  "name": "Approved By Branch Manager", 
+  "style": "", 
+  "workflow_state_name": "Approved By Branch Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:45:26.954431", 
+  "name": "Approved By CEO", 
+  "style": "", 
+  "workflow_state_name": "Approved By CEO"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:45:51.447528", 
+  "name": "Rejected By Accounts Manager", 
+  "style": "", 
+  "workflow_state_name": "Rejected By Accounts Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:46:18.575563", 
+  "name": "Rejected By Branch Manager", 
+  "style": "", 
+  "workflow_state_name": "Rejected By Branch Manager"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:46:53.674643", 
+  "name": "Rejected By CEO", 
+  "style": "", 
+  "workflow_state_name": "Rejected By CEO"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:50:53.983964", 
+  "name": "Approved By Accounts Manager(FT)", 
+  "style": "", 
+  "workflow_state_name": "Approved By Accounts Manager(FT)"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-26 16:51:42.696831", 
+  "name": "Approved By Branch Manager(FT)", 
+  "style": "", 
+  "workflow_state_name": "Approved By Branch Manager(FT)"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-27 16:15:14.055371", 
+  "name": "New(2t)", 
+  "style": "", 
+  "workflow_state_name": "New(2t)"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Workflow State", 
+  "icon": "", 
+  "modified": "2019-02-27 16:15:42.737094", 
+  "name": "New(3t)", 
+  "style": "", 
+  "workflow_state_name": "New(3t)"
+ }
+]
