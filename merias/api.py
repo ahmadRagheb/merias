@@ -36,7 +36,8 @@ def stock_entry(doc, method):
 			blocked_qty = flt(bloked_qty[0][0]) or 0
 
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
-				where item_code = %s and warehouse = %s", (str(d.item_code), str(d.s_warehouse)))
+				where item_code = '{}' and warehouse = '{}' ".format(d.item_code, d.s_warehouse))
+
 			actual_qty = flt(actual_qty[0][0]) or 0
 
 			allowed_qty = (d.transfer_qty + actual_qty) - blocked_qty
