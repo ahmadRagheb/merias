@@ -2,6 +2,33 @@
  {
   "docstatus": 0, 
   "doctype": "Custom Script", 
+  "dt": "Delivery Note", 
+  "modified": "2019-04-03 19:36:43.720601", 
+  "name": "Delivery Note-Client", 
+  "script": "\n  frappe.ui.form.on('Delivery Note', {\n              validate: function(frm) {\n                  $.each(frm.doc.items, function(index, row) {\n                          if (frappe.session.user == \"tawfeqiqnejwa@email.com\" && row.warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\") {\n                              frappe.throw(\"You are only allowed to use warehouse \u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL \");\n                              validated = false;\n                          }\n                  }); \n                                 }\n\n              });", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Stock Entry", 
+  "modified": "2019-04-03 19:47:49.023572", 
+  "name": "Stock Entry-Client", 
+  "script": "frappe.ui.form.on('Stock Entry', {\n\tvalidate: function(frm) {\n\t\tif (frappe.session.user == \"tawfeqiqnejwa@email.com\" && frm.doc.from_warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\" && frm.doc.to_warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\" ) {\n                              frappe.throw(\"You are only allowed to use warehouse \u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL \");\n                              validated = false;\n                          }\n                  $.each(frm.doc.items, function(index, row) {\n                          if (frappe.session.user == \"tawfeqiqnejwa@email.com\" && row.s_warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\" && row.t_warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\" ) {\n                              frappe.throw(\"You are only allowed to use warehouse \u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL \");\n                              validated = false;\n                          }\n                  }); \n                                 }\n\n              });", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Purchase Receipt", 
+  "modified": "2019-04-03 19:50:41.159261", 
+  "name": "Purchase Receipt-Client", 
+  "script": "frappe.ui.form.on('Purchase Receipt', {\n              validate: function(frm) {\n                  $.each(frm.doc.items, function(index, row) {\n                          if (frappe.session.user == \"tawfeqiqnejwa@email.com\" && row.warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\" && row.rejected_warehouse != \"\u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL\") {\n                              frappe.throw(\"You are only allowed to use warehouse \u0645\u062e\u0632\u0646 \u062d\u0649 \u0627\u0644\u0627\u062b\u0627\u0631 - AL \");\n                              validated = false;\n                          }\n                  }); \n                                 }\n\n              });", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
   "dt": "Landed Cost Voucher", 
   "modified": "2019-01-05 10:02:08.090296", 
   "name": "Landed Cost Voucher-Client", 
