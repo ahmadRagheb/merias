@@ -4,7 +4,7 @@
   "doctype": "Workflow", 
   "document_type": "Stock Entry", 
   "is_active": 1, 
-  "modified": "2019-02-27 16:17:02.234314", 
+  "modified": "2019-05-06 00:51:47.751522", 
   "name": "Stock Entry WF", 
   "override_status": 0, 
   "states": [
@@ -77,8 +77,8 @@
     "doc_status": "0", 
     "message": null, 
     "state": "Rejected By Accounts Manager", 
-    "update_field": null, 
-    "update_value": null
+    "update_field": "", 
+    "update_value": ""
    }, 
    {
     "allow_edit": "Branch Manager", 
@@ -101,7 +101,7 @@
     "doc_status": "1", 
     "message": null, 
     "state": "Approved By Accounts Manager(FT)", 
-    "update_field": null, 
+    "update_field": "", 
     "update_value": null
    }, 
    {
@@ -145,10 +145,10 @@
     "state": "New(3t)"
    }, 
    {
-    "action": "Approve", 
-    "allowed": "Branch Manager", 
-    "next_state": "Approved By Branch Manager(FT)", 
-    "state": "Approved By Accounts Manager"
+    "action": "Reject", 
+    "allowed": "Accounts Manager", 
+    "next_state": "Rejected By Accounts Manager", 
+    "state": "New(3t)"
    }, 
    {
     "action": "Reject", 

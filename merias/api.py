@@ -12,9 +12,8 @@ def workflow(doc, method):
 	if(checker):
 		if(value<100):
 			doc.workflow_state = "New(2t)"
-		elif(100<value and value<1000):
-			doc.workflow_state = "New(3t)"
-		else:
+		elif(100<=value and doc.workflow_state not in ["New(3t)", "Approved By Accounts Manager", "Approved By Branch Manager", "Approved By CEO",
+"Rejected By Accounts Manager","Rejected By Branch Manager", "Rejected By CEO"]) :
 			doc.workflow_state = "New(3t)"
 	else:
 		doc.workflow_state = "New"

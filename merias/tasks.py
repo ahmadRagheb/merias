@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 
 import frappe
+from frappe import _
 import frappe.handler
 import frappe.client
 from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_to_form
@@ -12,7 +15,7 @@ def hourly():
 		smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',as_dict=True)
 
 	so = tuple([x.name for x in blocked_so ])
-	message = "Hi, There is not collected Sales Order {}".format(so)
+	message = _(u"يوجد طلبات بيع ببضاعة محجوزة لم يتم مراجعتها {}".format(so))
 	user_list = frappe.get_all('User',filters={'enabled':1})
 	for user in user_list:
 		user_obj = frappe.get_doc('User',user.name)
