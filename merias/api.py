@@ -4,7 +4,24 @@ import frappe
 import frappe.handler
 import frappe.client
 from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_to_form
+from frappe.core.doctype.user.user import get_roles
 
+def so_team(doc,method):
+	user = str(frappe.session.data.user)
+	roles = frappe.permissions.get_roles(user)
+
+	valid = False
+	if "Sales Person" in roles:
+		valid = True
+
+	if valid:
+		emp = frappe.get_value('Employee', { 'user_id': user }, 'name')
+		if emp:
+			sales_person = frappe.get_value('Sales Person', { 'employee': emp, "enabled": 1 }, 'name')
+			if sales_person:
+				row = doc.append("sales_team",{})
+				row.sales_person = sales_person
+				row.allocated_percentage = 100
 
 def workflow(doc, method):
 	checker = doc.difference_exist
