@@ -1,0 +1,35 @@
+{
+ "add_total_row": 0, 
+ "apply_user_permissions": 1, 
+ "creation": "2019-06-08 09:19:28.724435", 
+ "disabled": 0, 
+ "docstatus": 0, 
+ "doctype": "Report", 
+ "idx": 0, 
+ "is_standard": "Yes", 
+ "modified": "2019-06-08 09:21:56.257234", 
+ "modified_by": "Administrator", 
+ "module": "Merias", 
+ "name": "Blocked Items", 
+ "owner": "Administrator", 
+ "ref_doctype": "Sales Order", 
+ "report_name": "Blocked Items", 
+ "report_type": "Script Report", 
+ "roles": [
+  {
+   "role": "Sales User"
+  }, 
+  {
+   "role": "Sales Manager"
+  }, 
+  {
+   "role": "Maintenance User"
+  }, 
+  {
+   "role": "Accounts User"
+  }, 
+  {
+   "role": "Stock User"
+  }
+ ]
+}
