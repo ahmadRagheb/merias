@@ -45,7 +45,7 @@ def stock_entry(doc, method):
 
 			bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
 			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',
+			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
 			(d.item_code, d.s_warehouse)
 			)
 
@@ -74,7 +74,7 @@ def check_availability_for_items_based_on_booked(doc, method):
 
 		bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
 		LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-		smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',
+		smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
 		(d.item_code, d.warehouse)
 		)
 
@@ -95,7 +95,29 @@ def check_availability_for_items_based_on_booked(doc, method):
 			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
 				d.item_code, d.stock_qty, allowed_and_qty))
 
-def si_for_items_based_on_booked(doc, method):
+def si_for_items_based_on_booked(doc,method):
+	if doc.update_stock == 1:
+		si_update_stock(doc, method)
+	else:
+		si_no_update_stock(doc, method)
+
+def si_no_update_stock(doc, method):
+	for d in doc.get('items'):
+		if d.sales_order:
+			so = d.sales_order
+			ic = d.item_code
+			r = frappe.db.sql('''SELECT qty ,delivered_qty from `tabSales Order Item`
+			 where parent='{}' and item_code='{}' '''.format(so, ic), as_dict=1)
+
+			# dq = flt(r[0].delivered_qty)
+			rq = flt(r[0].qty)
+			# total = flt(rq-dq)
+
+			if rq != d.qty:
+				frappe.throw("Item {} : qty {} not equal to sales order {} : blocked qty {}".format(
+				ic,d.qty,so,rq))
+
+def si_update_stock(doc, method):
 	""" when create Sales Order for item Pepsi and it has
 		stock_qty= 5 in store and
 		booked_items=3 then
@@ -105,7 +127,7 @@ def si_for_items_based_on_booked(doc, method):
 		if d.warehouse:
 			bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
 			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',
+			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
 			(d.item_code, d.warehouse)
 			)
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
@@ -115,7 +137,7 @@ def si_for_items_based_on_booked(doc, method):
 		else:
 			bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
 			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-			smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',
+			smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
 			(d.item_code)
 			)
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
