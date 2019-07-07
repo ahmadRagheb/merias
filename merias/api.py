@@ -154,3 +154,9 @@ def si_update_stock(doc, method):
 		if d.stock_qty > real_blocked_qty :
 			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
 				d.item_code, d.stock_qty, real_blocked_qty))
+
+
+from frappe.model.naming import make_autoname
+
+def auto_name(doc, method):
+	doc.customer_number = make_autoname('.#####')

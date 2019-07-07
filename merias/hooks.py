@@ -102,6 +102,9 @@ doc_events = {
 		"on_submit": "merias.api.stock_entry",
 		"validate": "merias.api.workflow",
 	},
+	"Customer": {
+		"before_insert":  "merias.api.auto_name",
+	}
 }
 
 # Scheduled Tasks
