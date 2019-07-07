@@ -5,6 +5,7 @@ import frappe.handler
 import frappe.client
 from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_to_form
 from frappe.core.doctype.user.user import get_roles
+from frappe.model.naming import make_autoname
 
 def so_team(doc,method):
 	user = str(frappe.session.data.user)
@@ -156,7 +157,5 @@ def si_update_stock(doc, method):
 				d.item_code, d.stock_qty, real_blocked_qty))
 
 
-from frappe.model.naming import make_autoname
-
-def auto_name(doc, method):
+def generate_unique_customer_number(doc, method):
 	doc.customer_number = make_autoname('.#####')

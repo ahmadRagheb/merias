@@ -103,7 +103,7 @@ doc_events = {
 		"validate": "merias.api.workflow",
 	},
 	"Customer": {
-		"before_insert":  "merias.api.auto_name",
+		"before_insert":  "merias.api.generate_unique_customer_number",
 	}
 }
 
