@@ -1,0 +1,1082 @@
+[
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0018", 
+  "modified": "2019-02-24 13:25:09.665303", 
+  "name": "8dfdb71380", 
+  "user": "abdulazizhijazi@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0019", 
+  "modified": "2019-02-24 13:27:20.279249", 
+  "name": "d79a549dc7", 
+  "user": "abdulsalamalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0022", 
+  "modified": "2019-02-24 13:32:21.191264", 
+  "name": "1cb24a6726", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0024", 
+  "modified": "2019-02-24 13:35:07.547298", 
+  "name": "a12ec86b08", 
+  "user": "abdulsalamalfaqi@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0025", 
+  "modified": "2019-02-24 13:36:11.403256", 
+  "name": "fff51a09e6", 
+  "user": "bashirisbiqa@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0026", 
+  "modified": "2019-04-02 19:30:06.318069", 
+  "name": "94c226d3fd", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-02-24 13:40:51.306146", 
+  "name": "821fac7ec7", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0029", 
+  "modified": "2019-02-24 13:48:08.909182", 
+  "name": "00906b8452", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-02-24 13:48:08.929513", 
+  "name": "5ca373227e", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0031", 
+  "modified": "2019-04-02 19:32:56.581830", 
+  "name": "441373ac1c", 
+  "user": "hamzamoeen@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 19:32:34.213578", 
+  "name": "956e5df88c", 
+  "user": "hamzamoeen@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0032", 
+  "modified": "2019-02-24 13:56:40.261330", 
+  "name": "53f5d4bfe1", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-02-24 13:56:40.281736", 
+  "name": "dd485068dd", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0033", 
+  "modified": "2019-02-24 13:59:41.801128", 
+  "name": "31a2f97010", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-02-24 13:59:41.819508", 
+  "name": "3f81b41947", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0034", 
+  "modified": "2019-02-24 14:01:48.320074", 
+  "name": "5e8cd33dbf", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-02-24 14:01:48.337682", 
+  "name": "0c52089f49", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0036", 
+  "modified": "2019-04-02 19:28:54.242516", 
+  "name": "10e882c178", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 19:28:45.473989", 
+  "name": "9dfda01a23", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 18:06:40.008989", 
+  "name": "72d7b06cb9", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 18:06:21.413455", 
+  "name": "4b8b8c4b71", 
+  "user": "Alati13alati@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek Warehouse - AL", 
+  "modified": "2019-04-16 20:24:41.226392", 
+  "name": "f3c7cc9139", 
+  "user": "Alati13alati@gmail.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 19:35:04.956186", 
+  "name": "6e41db3a33", 
+  "user": "bashirisbiqa@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 21:02:11.396400", 
+  "name": "e7cbfc0acd", 
+  "user": "abdulazizhijazi@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 21:02:38.851768", 
+  "name": "01b6943cf2", 
+  "user": "abdulsalamalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0043", 
+  "modified": "2019-04-02 21:25:05.856390", 
+  "name": "f5963123ec", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0635\u0631\u0627\u062a\u0629", 
+  "modified": "2019-04-02 21:25:32.023989", 
+  "name": "0a8cae6901", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "M01 - AL", 
+  "modified": "2019-04-02 21:26:46.930392", 
+  "name": "40f2235841", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0635\u0631\u0627\u062a\u0629 - \u0646\u0642\u062f\u064a\u0629", 
+  "modified": "2019-05-11 16:44:24.969350", 
+  "name": "2bc27e1a10", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0044", 
+  "modified": "2019-04-02 21:36:18.582619", 
+  "name": "8c26072a7e", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0635\u0631\u0627\u062a\u0629", 
+  "modified": "2019-04-02 21:36:34.875081", 
+  "name": "1dee58588f", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111107 - \u062e\u0632\u064a\u0646\u0629 \u0645\u0635\u0631\u0627\u062a\u0629 - AL", 
+  "modified": "2019-04-02 21:36:51.662462", 
+  "name": "8a83a444d0", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "M01 - AL", 
+  "modified": "2019-04-02 21:37:25.940068", 
+  "name": "d08c28ad18", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 21:37:37.870943", 
+  "name": "6c8110ee83", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-02 21:37:55.334116", 
+  "name": "963dc3512c", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u0637\u0646", 
+  "modified": "2019-04-03 18:08:20.821308", 
+  "name": "aa2dc8ab23", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 2", 
+  "modified": "2019-05-11 15:07:54.185250", 
+  "name": "6c111fb2fb", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z01 - AL", 
+  "modified": "2019-04-02 21:50:44.594484", 
+  "name": "33e94354bf", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z03 - AL", 
+  "modified": "2019-04-02 21:50:57.258778", 
+  "name": "bd29745ea8", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z02  - AL", 
+  "modified": "2019-04-02 21:51:10.522335", 
+  "name": "3e336fe428", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z04 - AL", 
+  "modified": "2019-04-02 21:51:34.267536", 
+  "name": "714f387c29", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z02  - AL", 
+  "modified": "2019-04-03 00:05:58.510017", 
+  "name": "72d658fdb1", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z03 - AL", 
+  "modified": "2019-04-03 00:06:16.089440", 
+  "name": "37edb11d25", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u0637\u0646", 
+  "modified": "2019-04-03 00:07:29.560670", 
+  "name": "df056c8c75", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z01 - AL", 
+  "modified": "2019-04-03 00:21:16.190085", 
+  "name": "039acaad57", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z02  - AL", 
+  "modified": "2019-04-03 00:21:30.411306", 
+  "name": "e3d19b5dd1", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z03 - AL", 
+  "modified": "2019-04-03 00:21:55.100561", 
+  "name": "3e8c249c10", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z04 - AL", 
+  "modified": "2019-04-03 00:22:13.656660", 
+  "name": "32d91a13ad", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 1", 
+  "modified": "2019-05-11 16:41:40.751992", 
+  "name": "fc6f12fea1", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u0637\u0646", 
+  "modified": "2019-04-03 00:23:08.321326", 
+  "name": "bd33ea3741", 
+  "user": "mohammedrheel@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 1", 
+  "modified": "2019-05-11 16:29:24.423587", 
+  "name": "6c473c1233", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u0637\u0646", 
+  "modified": "2019-04-03 00:39:09.421697", 
+  "name": "3a6d0b29ef", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z01 - AL", 
+  "modified": "2019-04-03 00:39:34.862064", 
+  "name": "9c8bc7f6ba", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T02 - AL", 
+  "modified": "2019-04-16 15:09:34.129747", 
+  "name": "ab1da1b56b", 
+  "user": "hamzamoeen@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-03 01:08:42.137943", 
+  "name": "15d060bb5f", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0631\u0627\u0628\u0644\u0633", 
+  "modified": "2019-04-03 01:09:09.078950", 
+  "name": "a1093c9fd0", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T02 - AL", 
+  "modified": "2019-04-03 01:09:52.244509", 
+  "name": "cf33d13987", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T02 - AL", 
+  "modified": "2019-04-16 15:07:42.903609", 
+  "name": "417cd4e013", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - \u0646\u0642\u062f\u064a\u0629", 
+  "modified": "2019-07-21 22:26:51.579051", 
+  "name": "2a666e5bc5", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0631\u0627\u0628\u0644\u0633", 
+  "modified": "2019-04-03 18:46:54.588168", 
+  "name": "3385172202", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0631\u0627\u0628\u0644\u0633", 
+  "modified": "2019-04-03 18:58:51.410531", 
+  "name": "65b35826c1", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0631\u0627\u0628\u0644\u0633", 
+  "modified": "2019-04-03 19:02:46.442801", 
+  "name": "c8f5bb43ff", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Branch", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0631\u0627\u0628\u0644\u0633", 
+  "modified": "2019-04-03 19:04:50.539787", 
+  "name": "444e336a4b", 
+  "user": "hamzamoeen@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T01 - AL", 
+  "modified": "2019-04-16 20:31:23.779665", 
+  "name": "4c13af395a", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0046", 
+  "modified": "2019-04-29 13:25:07.873488", 
+  "name": "734de6ccd8", 
+  "user": "maftha@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-29 13:25:07.899647", 
+  "name": "bd3d403ae9", 
+  "user": "maftha@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0047", 
+  "modified": "2019-04-29 13:27:57.150646", 
+  "name": "66bf3d9a13", 
+  "user": "Salem@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-04-29 13:27:57.172805", 
+  "name": "a0950ca9dc", 
+  "user": "Salem@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - \u0646\u0642\u062f\u064a\u0629", 
+  "modified": "2019-05-07 23:40:29.258732", 
+  "name": "daa7f4242e", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a", 
+  "modified": "2019-05-11 15:08:10.843734", 
+  "name": "b03cd5c6c6", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 1", 
+  "modified": "2019-05-11 15:08:24.278850", 
+  "name": "02898d7a6b", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0644\u0627\u064a\u0648\u062c\u062f", 
+  "modified": "2019-05-11 15:09:44.935567", 
+  "name": "4a6d996d37", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0635\u0631\u0627\u062a\u0629 - \u0635\u0643\u0648\u0643", 
+  "modified": "2019-05-11 16:45:34.820716", 
+  "name": "0228a52673", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "Z01 - AL", 
+  "modified": "2019-05-13 01:16:38.378238", 
+  "name": "aef2bb0162", 
+  "user": "ahmedalati@email.com"
+ }, 
+ {
+  "allow": "Sales Person", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0637\u0627\u0647\u0631 \u0627\u0644\u0639\u0627\u062a\u064a", 
+  "modified": "2019-05-18 16:59:47.780628", 
+  "name": "f10df28843", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - \u0646\u0642\u062f\u064a\u0629", 
+  "modified": "2019-06-23 19:58:07.229881", 
+  "name": "7180d7542d", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a", 
+  "modified": "2019-06-23 19:58:18.992181", 
+  "name": "70f49baab3", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0635\u0631\u0627\u062a\u0629 - \u0646\u0642\u062f\u064a\u0629", 
+  "modified": "2019-06-23 19:58:33.069386", 
+  "name": "6d47e2c536", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 1", 
+  "modified": "2019-06-23 19:58:45.490718", 
+  "name": "62efeeb494", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0632\u0644\u064a\u062a\u0646 - \u0646\u0642\u062f\u064a\u0629 \u0641\u0631\u0639\u064a\u0629 2", 
+  "modified": "2019-06-23 19:58:59.136740", 
+  "name": "4ec80d8926", 
+  "user": "aimanalatti88@gmail.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-06-23 20:53:05.346144", 
+  "name": "5f3e76daa9", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0045", 
+  "modified": "2019-07-13 21:49:45.561868", 
+  "name": "7534ff046b", 
+  "user": "mohamedalatti1989@gmail.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111293 - \u0635\u0643\u0648\u0643 \u0645\u0635\u0631\u0627\u062a\u0647 - AL", 
+  "modified": "2019-07-18 17:50:42.689077", 
+  "name": "ef9959038f", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111104 - \u062e\u0632\u064a\u0646\u0629 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - AL", 
+  "modified": "2019-07-18 17:52:37.638428", 
+  "name": "1245812c2a", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111291 - \u0635\u0643\u0648\u0643 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - AL", 
+  "modified": "2019-07-18 17:53:02.251676", 
+  "name": "9571f20ad9", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111281 - \u0628\u0637\u0627\u0642\u0629 \u0645\u0635\u0631\u0641\u064a\u0629 -\u0635\u0627\u0644\u0629 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 - AL", 
+  "modified": "2019-07-18 17:53:27.593306", 
+  "name": "000951bd50", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Account", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "111292 - \u0635\u0643\u0648\u0643 \u0632\u0644\u064a\u062a\u0646 - AL", 
+  "modified": "2019-07-18 17:56:46.373274", 
+  "name": "cb0c4463d9", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0042", 
+  "modified": "2019-07-19 21:00:19.975951", 
+  "name": "b47c5954b9", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0049", 
+  "modified": "2019-07-19 21:06:47.667887", 
+  "name": "7ad5a81866", 
+  "user": "Mohyisoufia@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-07-19 21:06:47.690446", 
+  "name": "e305fe37ed", 
+  "user": "Mohyisoufia@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644- \u0628\u0637\u0627\u0642\u0629", 
+  "modified": "2019-07-19 22:07:28.554484", 
+  "name": "30b1784b85", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 1, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644- \u0635\u0643\u0648\u0643", 
+  "modified": "2019-07-19 22:07:50.376519", 
+  "name": "586546f252", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0050", 
+  "modified": "2019-07-20 23:30:19.720181", 
+  "name": "64006fe2a0", 
+  "user": "kh1955@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-07-20 23:30:19.731594", 
+  "name": "2fb20a79dd", 
+  "user": "kh1955@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0635\u0627\u0644\u0629 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 2 - AL", 
+  "modified": "2019-07-21 21:54:33.413558", 
+  "name": "22dc315843", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0631\u0643\u0632 \u0645\u0635\u0631\u0627\u062a\u0647 1 - AL", 
+  "modified": "2019-07-21 00:20:56.114783", 
+  "name": "a1fbcd5d6d", 
+  "user": "alaty75@gmail.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u062e\u0632\u0646 \u0632\u0644\u064a\u062a\u0646 1 - AL", 
+  "modified": "2019-07-21 00:22:39.609206", 
+  "name": "8655acf0db", 
+  "user": "bashirisbiqa@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u062e\u0632\u0646 \u0632\u0644\u064a\u062a\u0646 2 - AL", 
+  "modified": "2019-07-21 00:23:26.266522", 
+  "name": "fef65b36d1", 
+  "user": "hussin.alati1992@gmail.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0631\u0643\u0632 \u0645\u0635\u0631\u0627\u062a\u0647 1 - AL", 
+  "modified": "2019-07-21 00:24:53.493625", 
+  "name": "74dde05279", 
+  "user": "ibrahimalati@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0635\u0627\u0644\u0629 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 2 - AL", 
+  "modified": "2019-07-21 00:25:38.068938", 
+  "name": "15a268e011", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0635\u0627\u0644\u0629 \u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644 2 - AL", 
+  "modified": "2019-07-21 00:26:15.206492", 
+  "name": "26dbe22ad8", 
+  "user": "moatazalati@email.com"
+ }, 
+ {
+  "allow": "Cost Center", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u062e\u0632\u0646 \u0632\u0644\u064a\u062a\u0646 2 - AL", 
+  "modified": "2019-07-21 01:55:39.565964", 
+  "name": "e57dea5803", 
+  "user": "ahmedalakouk@email.com"
+ }, 
+ {
+  "allow": "Employee", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "EMP/0051", 
+  "modified": "2019-07-21 12:01:39.347948", 
+  "name": "375633122d", 
+  "user": "logistic@email.com"
+ }, 
+ {
+  "allow": "Company", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "AL lahek", 
+  "modified": "2019-07-21 12:01:39.362962", 
+  "name": "6c0aa2f7b6", 
+  "user": "logistic@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T02 - AL", 
+  "modified": "2019-07-21 22:03:19.093435", 
+  "name": "951d12d8bc", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Warehouse", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "T01 - AL", 
+  "modified": "2019-07-21 22:03:03.791749", 
+  "name": "9d12005582", 
+  "user": "tawfeqiqnejwa@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644- \u0628\u0637\u0627\u0642\u0629", 
+  "modified": "2019-07-21 22:26:07.814739", 
+  "name": "e5129b131b", 
+  "user": "khalilalati@email.com"
+ }, 
+ {
+  "allow": "Mode of Payment", 
+  "apply_for_all_roles": 0, 
+  "docstatus": 0, 
+  "doctype": "User Permission", 
+  "for_value": "\u063a\u0648\u0637 \u0627\u0644\u0634\u0639\u0627\u0644- \u0635\u0643\u0648\u0643", 
+  "modified": "2019-07-21 22:26:39.032277", 
+  "name": "ed88e78c54", 
+  "user": "khalilalati@email.com"
+ }
+]

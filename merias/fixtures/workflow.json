@@ -4,7 +4,7 @@
   "doctype": "Workflow", 
   "document_type": "Stock Entry", 
   "is_active": 1, 
-  "modified": "2019-05-06 14:50:36.975375", 
+  "modified": "2019-07-21 14:18:04.159265", 
   "name": "Stock Entry WF", 
   "override_status": 0, 
   "states": [
