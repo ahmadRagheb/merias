@@ -149,12 +149,12 @@ def si_update_stock(doc, method):
 		bloked_qty = flt(bloked_qty[0][0]) or 0
 		actual_qty = flt(actual_qty[0][0]) or 0
 		projected_qty = flt(projected_qty[0][0]) or 0
+		if bloked_qty != 0 :
+			real_blocked_qty = actual_qty - bloked_qty
 
-		real_blocked_qty = actual_qty - bloked_qty
-
-		if d.stock_qty > real_blocked_qty :
-			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-				d.item_code, d.stock_qty, real_blocked_qty))
+			if d.stock_qty > real_blocked_qty :
+				frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
+					d.item_code, d.stock_qty, real_blocked_qty))
 
 
 def generate_unique_customer_number(doc, method):
