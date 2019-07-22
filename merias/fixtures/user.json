@@ -1,0 +1,5220 @@
+[
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "admin@example.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Administrator", 
+  "frappe_userid": null, 
+  "full_name": "Administrator", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": null, 
+  "last_active": "2019-07-22 15:27:51.812632", 
+  "last_ip": "213.6.136.158", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 10:34:46.141754", 
+  "last_name": "", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-22 13:35:13.770114", 
+  "mute_sounds": 0, 
+  "name": "Administrator", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "System Manager"
+   }, 
+   {
+    "role": "Accounts Manager"
+   }, 
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "Blogger"
+   }, 
+   {
+    "role": "CEO"
+   }, 
+   {
+    "role": "Delete Address"
+   }, 
+   {
+    "role": "Fleet Manager"
+   }, 
+   {
+    "role": "HR Manager"
+   }, 
+   {
+    "role": "Item Manager"
+   }, 
+   {
+    "role": "Knowledge Base Editor"
+   }, 
+   {
+    "role": "Maintenance Manager"
+   }, 
+   {
+    "role": "Manufacturing Manager"
+   }, 
+   {
+    "role": "Newsletter Manager"
+   }, 
+   {
+    "role": "Administrator"
+   }, 
+   {
+    "role": "Projects Manager"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Quality Manager"
+   }, 
+   {
+    "role": "Reports for Purchase Master Manager"
+   }, 
+   {
+    "role": "Sales Manager"
+   }, 
+   {
+    "role": "Sales Person"
+   }, 
+   {
+    "role": "Seller"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "Support Team"
+   }, 
+   {
+    "role": "Website Manager"
+   }, 
+   {
+    "role": "Supplier"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Aiman Reports"
+   }, 
+   {
+    "role": "Auditor"
+   }, 
+   {
+    "role": "Branch Manager"
+   }, 
+   {
+    "role": "Customer"
+   }, 
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Expense Approver"
+   }, 
+   {
+    "role": "Fulfillment User"
+   }, 
+   {
+    "role": "HR User"
+   }, 
+   {
+    "role": "Knowledge Base Contributor"
+   }, 
+   {
+    "role": "Leave Approver"
+   }, 
+   {
+    "role": "Maintenance User"
+   }, 
+   {
+    "role": "Manufacturing User"
+   }, 
+   {
+    "role": "payment entry with cancel"
+   }, 
+   {
+    "role": "PR invoice"
+   }, 
+   {
+    "role": "Projects User"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "Purchase User"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "sale order read only"
+   }, 
+   {
+    "role": "Sales Master Manager"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "valuation rate"
+   }, 
+   {
+    "role": "see all invoices"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 1, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "administrator"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "Guest@example.co", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Guest", 
+  "frappe_userid": null, 
+  "full_name": "Guest", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": null, 
+  "last_active": null, 
+  "last_ip": null, 
+  "last_known_versions": null, 
+  "last_login": null, 
+  "last_name": "", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-02-03 21:25:20.907185", 
+  "mute_sounds": 0, 
+  "name": "Guest", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Guest"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 1, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "Guest"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Item"
+   }, 
+   {
+    "module": "Price List Report"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Customer"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "khalilalati@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Khalil", 
+  "frappe_userid": "45c8b6eb83002743b47d0f3057e665e160ed276", 
+  "full_name": "Khalil Al Ati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-22 15:27:24.998494", 
+  "last_ip": "165.16.10.141", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 15:27:23.666458", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-22 13:48:39.875962", 
+  "mute_sounds": 0, 
+  "name": "khalilalati@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "khalil"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-29", 
+  "block_modules": [
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Restaurant"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "abdulazizhijazi@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Abdel Aziz ", 
+  "frappe_userid": "d87189d0a57d65fb6a5a01e2c64c7b5db0fd0ea", 
+  "full_name": "Abdel Aziz  Hegazi", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-22 15:26:00.550990", 
+  "last_ip": "41.254.65.85", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 15:04:56.709314", 
+  "last_name": "Hegazi", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-19 01:40:26.498635", 
+  "mute_sounds": 0, 
+  "name": "abdulazizhijazi@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "Auditor"
+   }, 
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "Item Manager"
+   }, 
+   {
+    "role": "HR Manager"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Accounts Manager"
+   }, 
+   {
+    "role": "System Manager"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Purchase User"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "pos"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "abdelaziz_hegazi"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "abdulsalamalati@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Abdul Salam", 
+  "frappe_userid": "57d555b2831b970cea8f0fdba41fa1392e51a29", 
+  "full_name": "Abdul Salam Al Ati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-05-08 01:24:49.480373", 
+  "last_ip": "102.68.134.44", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-05-08 01:19:24.278092", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": " Al Hiwar ", 
+  "mobile_no": null, 
+  "modified": "2019-04-08 14:04:28.512888", 
+  "mute_sounds": 0, 
+  "name": "abdulsalamalati@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Accounts Manager"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "abdulsalam_hiwar"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "ahmedalati@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Ahmed ", 
+  "frappe_userid": "2d10adac09e05e3353471d418277db545eb86ed", 
+  "full_name": "Ahmed  Al Ati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-18 15:24:20.829666", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-18 14:26:30.611190", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-06-11 20:18:36.850365", 
+  "mute_sounds": 0, 
+  "name": "ahmedalati@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Stock report"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "ahmed_alati"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "abdulsalamalfaqi@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Abdul Salam ", 
+  "frappe_userid": "4aedba3814ca34fc494d7c17c1f73f9c52c5fe1", 
+  "full_name": "Abdul Salam  Al Ati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "en", 
+  "last_active": "2019-03-16 13:18:14.832526", 
+  "last_ip": "5.133.29.27", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-03-16 13:18:13.259091", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": "Al Faqi", 
+  "mobile_no": null, 
+  "modified": "2019-03-16 13:17:59.966245", 
+  "mute_sounds": 0, 
+  "name": "abdulsalamalfaqi@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Stock Manager"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "abdulsalam_alfaqi"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Website"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "bashirisbiqa@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Bashir \u202b", 
+  "frappe_userid": "714f4a07f7f327b1d0c9665460f1e227917ae68", 
+  "full_name": "Bashir \u202b Isbiqa", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-05 20:08:01.345026", 
+  "last_ip": "165.16.86.148", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-05 20:08:00.190576", 
+  "last_name": "Isbiqa", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-05-18 23:16:54.287698", 
+  "mute_sounds": 0, 
+  "name": "bashirisbiqa@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Item Manager"
+   }, 
+   {
+    "role": "PR invoice"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "Bashir Isbiqa \u202b"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Item"
+   }, 
+   {
+    "module": "Price List Report"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "ahmedalakouk@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Ahmed ", 
+  "frappe_userid": "6a8bace032aa754ac6455d7160f4b002ed81d3b", 
+  "full_name": "Ahmed  Al Akouk", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-18 18:14:01.808104", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-18 18:14:00.722213", 
+  "last_name": "Al Akouk", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-19 21:03:53.878391", 
+  "mute_sounds": 0, 
+  "name": "ahmedalakouk@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Employee"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "ahmed_alakouk"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Water Analysis"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "hamzamoeen@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Hamza ", 
+  "frappe_userid": "5785d1446462511a58329b70e9b70450ad2aa42", 
+  "full_name": "Hamza  Moeen", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-06-23 23:26:09.971289", 
+  "last_ip": "165.16.86.164", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-06-23 21:34:20.185036", 
+  "last_name": "Moeen", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-04-25 00:03:20.184731", 
+  "mute_sounds": 0, 
+  "name": "hamzamoeen@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Employee"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "hamza_moeen"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Weather"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "aimanalatti88@gmail.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Aiman", 
+  "frappe_userid": "1cea3f81b561d3440ccc1ed94853c7656506c2f", 
+  "full_name": "Aiman Al Atti", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-22 14:44:57.240193", 
+  "last_ip": "41.254.64.150", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 14:44:55.832232", 
+  "last_name": "Al Atti", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-21 23:21:41.495430", 
+  "mute_sounds": 0, 
+  "name": "aimanalatti88@gmail.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "Sales Master Manager"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "Auditor"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Sales Manager"
+   }, 
+   {
+    "role": "Aiman Reports"
+   }, 
+   {
+    "role": "Branch Manager"
+   }, 
+   {
+    "role": "Purchase User"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "PR invoice"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "aiman_alati"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Website"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "mohammedrheel@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Mohammed", 
+  "frappe_userid": "f54de56027490ce992f7ce0729695125ea01fa2", 
+  "full_name": "Mohammed Rheel", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-18 14:23:51.211001", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-18 14:23:49.861282", 
+  "last_name": "Rheel", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-05-12 19:34:41.845216", 
+  "mute_sounds": 0, 
+  "name": "mohammedrheel@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "pos"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "mohammed_rheel"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "hussin.alati1992@gmail.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Hussain", 
+  "frappe_userid": "1868844d66e5b254d776b97bfc2201d215fc5ef", 
+  "full_name": "Hussain Al Ati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-19 21:58:14.275946", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-19 21:47:41.204938", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-05-12 19:33:13.486076", 
+  "mute_sounds": 0, 
+  "name": "hussin.alati1992@gmail.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Branch Manager"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "payment entry with cancel"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "hussain_alati"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2018-07-01", 
+  "block_modules": [
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Supplier"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "tawfeqiqnejwa@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Tawfeq", 
+  "frappe_userid": "b1128cbee087de0badc082de2d69a683f98ec2e", 
+  "full_name": "Tawfeq Iqnejwa\u202c", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-21 23:46:59.359043", 
+  "last_ip": "156.38.51.211", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-21 23:46:57.558687", 
+  "last_name": "Iqnejwa\u202c", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-21 21:28:58.500772", 
+  "mute_sounds": 0, 
+  "name": "tawfeqiqnejwa@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "payment entry with cancel"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Purchase User"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "tawfeq_iqnejwa"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "Alati13alati@gmail.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Ahmed", 
+  "frappe_userid": "b5193353a88f1f3789d7f65d2af7bf100711ddc", 
+  "full_name": "Ahmed Alati", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-05-06 15:05:01.072081", 
+  "last_ip": "188.161.87.207", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-05-06 15:05:00.097739", 
+  "last_name": "Alati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-05-05 22:53:49.450226", 
+  "mute_sounds": 0, 
+  "name": "Alati13alati@gmail.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "ahmed"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2002-01-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Weather"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "alaty75@gmail.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Taher", 
+  "frappe_userid": "11dc54923b550e6b2bc8f14630cc0d817068a02", 
+  "full_name": "Taher Alati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-22 15:01:09.143473", 
+  "last_ip": "41.254.65.85", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 15:01:07.551715", 
+  "last_name": "Alati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-22 09:57:34.219242", 
+  "mute_sounds": 0, 
+  "name": "alaty75@gmail.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Branch Manager"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Sales Person"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "tahe"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "admin2@example.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Administrator2", 
+  "frappe_userid": "4c1e3a0e7b7e7fdf9e16a378c273bbb4bc1fcba", 
+  "full_name": "Administrator2", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "en", 
+  "last_active": "2019-07-22 15:28:43.998232", 
+  "last_ip": "165.16.10.141", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.71\", \"branch_version\": \"10.1.71-5 (f4c4a27)\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"v10.x.x\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"erpnext\": {\"version\": \"10.1.81\", \"branch_version\": \"10.1.81 (898977b)\", \"description\": \"ERP made simple\", \"branch\": \"v10.x.x\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 15:28:43.379858", 
+  "last_name": null, 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-22 10:45:59.877899", 
+  "mute_sounds": 0, 
+  "name": "admin2@example.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": "VblC1EikkbzO16BRnRdeyIJW6lRULiki", 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Administrator"
+   }, 
+   {
+    "role": "All"
+   }, 
+   {
+    "role": "Guest"
+   }, 
+   {
+    "role": "Report Manager"
+   }, 
+   {
+    "role": "Website Manager"
+   }, 
+   {
+    "role": "Knowledge Base Contributor"
+   }, 
+   {
+    "role": "Knowledge Base Editor"
+   }, 
+   {
+    "role": "Blogger"
+   }, 
+   {
+    "role": "Newsletter Manager"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Purchase User"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }, 
+   {
+    "role": "Maintenance User"
+   }, 
+   {
+    "role": "Maintenance Manager"
+   }, 
+   {
+    "role": "Sales Master Manager"
+   }, 
+   {
+    "role": "Sales Manager"
+   }, 
+   {
+    "role": "Accounts Manager"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "Auditor"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Manufacturing Manager"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "Projects User"
+   }, 
+   {
+    "role": "HR User"
+   }, 
+   {
+    "role": "Manufacturing User"
+   }, 
+   {
+    "role": "Projects Manager"
+   }, 
+   {
+    "role": "Item Manager"
+   }, 
+   {
+    "role": "HR Manager"
+   }, 
+   {
+    "role": "Expense Approver"
+   }, 
+   {
+    "role": "Leave Approver"
+   }, 
+   {
+    "role": "Fleet Manager"
+   }, 
+   {
+    "role": "Quality Manager"
+   }, 
+   {
+    "role": "Fulfillment User"
+   }, 
+   {
+    "role": "Support Team"
+   }, 
+   {
+    "role": "CEO"
+   }, 
+   {
+    "role": "Supplier"
+   }, 
+   {
+    "role": "Customer"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "Branch Manager"
+   }, 
+   {
+    "role": "Purchase Receipt Price"
+   }, 
+   {
+    "role": "Reports for Purchase Master Manager"
+   }, 
+   {
+    "role": "Seller"
+   }, 
+   {
+    "role": "Delivery Note Price"
+   }, 
+   {
+    "role": "Delete Address"
+   }, 
+   {
+    "role": "Stock report"
+   }, 
+   {
+    "role": "Stock User without warehouse"
+   }, 
+   {
+    "role": "System Manager"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 1, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "administrator2"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "2002-01-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Item"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Price List Report"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "moatazalati@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Moataz", 
+  "frappe_userid": "56ab9bb78f62f10392818e00832f0ff2633da3f", 
+  "full_name": "Moataz  Hewal", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-22 12:40:21.536057", 
+  "last_ip": "165.16.94.53", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-22 07:43:11.199547", 
+  "last_name": " Hewal", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-21 22:49:47.532873", 
+  "mute_sounds": 0, 
+  "name": "moatazalati@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Sales Manager"
+   }, 
+   {
+    "role": "Seller"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "moataz_Hewal"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Adminuser"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Price List Report"
+   }, 
+   {
+    "module": "Item"
+   }, 
+   {
+    "module": "Desk"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "ibrahimalati@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Ibrahim ", 
+  "frappe_userid": "70a6d8b1d19d1cd9b9fa5ba349f6b398bbda546", 
+  "full_name": "Ibrahim  Al Ati", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-19 21:42:39.830798", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-19 21:42:37.879927", 
+  "last_name": "Al Ati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-19 21:42:25.095727", 
+  "mute_sounds": 0, 
+  "name": "ibrahimalati@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Sales User"
+   }, 
+   {
+    "role": "pos"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "ibrahim_alati"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "1984-04-01", 
+  "block_modules": [
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "maftha@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Muftah", 
+  "frappe_userid": "1853893a61e5c94cbeee642f6261094f7324d01", 
+  "full_name": "Muftah Alati", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-17 21:51:25.506235", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"adminuser\": {\"version\": \"0.0.1\", \"description\": \"export admin user\", \"branch\": \"master\", \"title\": \"Adminuser\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-17 19:46:58.840744", 
+  "last_name": "Alati", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-05-05 23:07:23.467839", 
+  "mute_sounds": 0, 
+  "name": "maftha@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "CEO"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "System Manager"
+   }, 
+   {
+    "role": "Employee"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "maftha_"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "1984-04-01", 
+  "block_modules": [
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "POS"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "Salem@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Salem", 
+  "frappe_userid": "1853893a61e5c94cbeee642f6261094f7324d01", 
+  "full_name": "Salem Kadah", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "en", 
+  "last_active": null, 
+  "last_ip": null, 
+  "last_known_versions": null, 
+  "last_login": null, 
+  "last_name": "Kadah", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-04-29 13:28:07.540050", 
+  "mute_sounds": 0, 
+  "name": "Salem@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Analytics"
+   }, 
+   {
+    "role": "Purchase Master Manager"
+   }, 
+   {
+    "role": "Purchase Manager"
+   }, 
+   {
+    "role": "Stock Manager"
+   }, 
+   {
+    "role": "System Manager"
+   }, 
+   {
+    "role": "Employee"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": null
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": null, 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "mohamedalatti1989@gmail.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Mohamed", 
+  "frappe_userid": "73ab73a383d7da5e9244ca429c2c9ae7fedd31c", 
+  "full_name": "Mohamed Alatti", 
+  "gender": null, 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-14 21:43:43.724012", 
+  "last_ip": "165.16.86.153", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"price_list_report\": {\"version\": \"0.0.1\", \"description\": \"Price List Report For Items\", \"branch\": \"master\", \"title\": \"Price List Report\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-14 20:55:44.883979", 
+  "last_name": "Alatti", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-14 15:16:47.082278", 
+  "mute_sounds": 0, 
+  "name": "mohamedalatti1989@gmail.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Accounts User"
+   }, 
+   {
+    "role": "Customer"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "mohamed_alatti"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "1992-10-01", 
+  "block_modules": [
+   {
+    "module": "Accounts"
+   }, 
+   {
+    "module": "Assets"
+   }, 
+   {
+    "module": "Chapter"
+   }, 
+   {
+    "module": "Core"
+   }, 
+   {
+    "module": "Course Schedule"
+   }, 
+   {
+    "module": "Crop"
+   }, 
+   {
+    "module": "Custom Reports"
+   }, 
+   {
+    "module": "Agriculture"
+   }, 
+   {
+    "module": "Buying"
+   }, 
+   {
+    "module": "Contacts"
+   }, 
+   {
+    "module": "Course"
+   }, 
+   {
+    "module": "CRM"
+   }, 
+   {
+    "module": "Crop Cycle"
+   }, 
+   {
+    "module": "Customer"
+   }, 
+   {
+    "module": "Desk"
+   }, 
+   {
+    "module": "Donor"
+   }, 
+   {
+    "module": "Data Import"
+   }, 
+   {
+    "module": "Disease"
+   }, 
+   {
+    "module": "Email Inbox"
+   }, 
+   {
+    "module": "Fees"
+   }, 
+   {
+    "module": "File Manager"
+   }, 
+   {
+    "module": "Healthcare"
+   }, 
+   {
+    "module": "Instructor"
+   }, 
+   {
+    "module": "Issue"
+   }, 
+   {
+    "module": "Land Unit"
+   }, 
+   {
+    "module": "Leaderboard"
+   }, 
+   {
+    "module": "Maintenance"
+   }, 
+   {
+    "module": "Member"
+   }, 
+   {
+    "module": "Non Profit"
+   }, 
+   {
+    "module": "Profit and Loss Statement"
+   }, 
+   {
+    "module": "Project"
+   }, 
+   {
+    "module": "Purchase Order"
+   }, 
+   {
+    "module": "Room"
+   }, 
+   {
+    "module": "Sales Order"
+   }, 
+   {
+    "module": "Setup"
+   }, 
+   {
+    "module": "Soil Texture"
+   }, 
+   {
+    "module": "Student"
+   }, 
+   {
+    "module": "Student Attendance Tool"
+   }, 
+   {
+    "module": "Supplier"
+   }, 
+   {
+    "module": "Task"
+   }, 
+   {
+    "module": "Volunteer"
+   }, 
+   {
+    "module": "Weather"
+   }, 
+   {
+    "module": "Merias"
+   }, 
+   {
+    "module": "Plant Analysis"
+   }, 
+   {
+    "module": "Price List Report"
+   }, 
+   {
+    "module": "Program"
+   }, 
+   {
+    "module": "Projects"
+   }, 
+   {
+    "module": "Restaurant"
+   }, 
+   {
+    "module": "Sales Invoice"
+   }, 
+   {
+    "module": "Selling"
+   }, 
+   {
+    "module": "Soil Analysis"
+   }, 
+   {
+    "module": "Student Applicant"
+   }, 
+   {
+    "module": "Stock"
+   }, 
+   {
+    "module": "Student Group"
+   }, 
+   {
+    "module": "Support"
+   }, 
+   {
+    "module": "Water Analysis"
+   }, 
+   {
+    "module": "Website"
+   }, 
+   {
+    "module": "Education"
+   }, 
+   {
+    "module": "Employee"
+   }, 
+   {
+    "module": "Fertilizer"
+   }, 
+   {
+    "module": "Grant Application"
+   }, 
+   {
+    "module": "HR"
+   }, 
+   {
+    "module": "Integrations"
+   }, 
+   {
+    "module": "Item"
+   }, 
+   {
+    "module": "Lead"
+   }, 
+   {
+    "module": "Learn"
+   }, 
+   {
+    "module": "Manufacturing"
+   }
+  ], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "Mohyisoufia@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "Mohyi", 
+  "frappe_userid": "bb6e1ca7508473e65ebdc028c99d8448e34ee27", 
+  "full_name": "Mohyi Soufia", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-19 21:08:55.384920", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"price_list_report\": {\"version\": \"0.0.1\", \"description\": \"Price List Report For Items\", \"branch\": \"master\", \"title\": \"Price List Report\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-19 21:08:53.320499", 
+  "last_name": "Soufia", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-19 21:08:33.545692", 
+  "mute_sounds": 0, 
+  "name": "Mohyisoufia@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "pos"
+   }, 
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Sales User"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "Mohyi_soufia"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "1955-01-01", 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "kh1955@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "khalifa", 
+  "frappe_userid": "cd8cd35b37725fab834137dd1af770c48d58592", 
+  "full_name": "khalifa zriba", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-21 11:39:17.767459", 
+  "last_ip": "165.16.86.191", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"price_list_report\": {\"version\": \"0.0.1\", \"description\": \"Price List Report For Items\", \"branch\": \"master\", \"title\": \"Price List Report\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-21 10:11:01.165801", 
+  "last_name": "zriba", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-20 23:34:17.548168", 
+  "mute_sounds": 0, 
+  "name": "kh1955@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Employee"
+   }, 
+   {
+    "role": "Accounts Manager"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "khalifa zriba"
+ }, 
+ {
+  "background_image": null, 
+  "background_style": "Fill Screen", 
+  "bio": null, 
+  "birth_date": "1990-01-31", 
+  "block_modules": [], 
+  "defaults": [], 
+  "docstatus": 0, 
+  "doctype": "User", 
+  "email": "logistic@email.com", 
+  "email_signature": null, 
+  "enabled": 1, 
+  "fb_userid": null, 
+  "fb_username": null, 
+  "first_name": "logistic", 
+  "frappe_userid": "a78fc42887d40e49b96b389a3a30b29692a5ed2", 
+  "full_name": "logistic logistic", 
+  "gender": "Male", 
+  "github_userid": null, 
+  "github_username": null, 
+  "google_userid": null, 
+  "language": "ar", 
+  "last_active": "2019-07-21 22:32:57.605218", 
+  "last_ip": "156.38.51.211", 
+  "last_known_versions": "{\"frappe\": {\"version\": \"10.1.68\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"master\", \"title\": \"Frappe Framework\"}, \"price_list_report\": {\"version\": \"0.0.1\", \"description\": \"Price List Report For Items\", \"branch\": \"master\", \"title\": \"Price List Report\"}, \"merias\": {\"version\": \"0.0.1\", \"description\": \"simple custoization to merias co\", \"branch\": \"master\", \"title\": \"Merias\"}, \"custom_reports\": {\"version\": \"0.0.1\", \"description\": \"Custom App for Custom Reports\", \"branch\": \"master\", \"title\": \"Custom Reports\"}, \"erpnext\": {\"version\": \"10.1.76\", \"description\": \"ERP made simple\", \"branch\": \"master\", \"title\": \"ERPNext\"}}", 
+  "last_login": "2019-07-21 22:31:15.851121", 
+  "last_name": "logistic", 
+  "location": null, 
+  "login_after": 0, 
+  "login_before": 0, 
+  "logout_all_sessions": 0, 
+  "middle_name": null, 
+  "mobile_no": null, 
+  "modified": "2019-07-21 21:07:47.538467", 
+  "mute_sounds": 0, 
+  "name": "logistic@email.com", 
+  "new_password": "", 
+  "phone": null, 
+  "redirect_url": null, 
+  "reset_password_key": null, 
+  "restrict_ip": null, 
+  "role_profile_name": null, 
+  "roles": [
+   {
+    "role": "Purchase User"
+   }, 
+   {
+    "role": "Stock User"
+   }, 
+   {
+    "role": "Employee"
+   }
+  ], 
+  "send_me_a_copy": 0, 
+  "send_password_update_notification": 0, 
+  "send_welcome_email": 0, 
+  "simultaneous_sessions": 1, 
+  "thread_notify": 1, 
+  "time_zone": null, 
+  "unsubscribed": 0, 
+  "user_emails": [], 
+  "user_image": null, 
+  "user_type": "System User", 
+  "username": "logistic"
+ }
+]
