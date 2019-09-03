@@ -158,3 +158,4 @@ scheduler_events = {
 # ]
 
 #fixtures = ["Custom Script","Custom Field", "Workflow State", "Workflow", "Role","DocPerm", "User Permission", "User Permission for Page and Report", "User", "Employee" ]
+fixtures = ["Custom Field"]
