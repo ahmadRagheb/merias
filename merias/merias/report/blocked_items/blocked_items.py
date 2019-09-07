@@ -26,7 +26,7 @@ def get_columns():
 def get_data(filters):
 	conditions = get_conditions(filters)
 
-	dn = frappe.db.sql("""select against_sales_order , item_code, sum(qty)
+	dn = frappe.db.sql("""select against_sales_order , item_code, sum(qty) as qty
 	from `tabDelivery Note Item` where docstatus =1 and against_sales_order IS NOT NULL
 	group by against_sales_order""", as_dict=1)
 
