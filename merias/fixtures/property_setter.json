@@ -3510,23 +3510,6 @@
   "doc_type": "Sales Order Item", 
   "docstatus": 0, 
   "doctype": "Property Setter", 
-  "doctype_or_field": "DocType", 
-  "field_name": null, 
-  "modified": "2019-07-21 14:45:30.352998", 
-  "name": "Sales Order Item-read_only_onload", 
-  "property": "read_only_onload", 
-  "property_type": "Check", 
-  "value": null
- }, 
- {
-  "_assign": null, 
-  "_comments": null, 
-  "_liked_by": null, 
-  "_user_tags": null, 
-  "default_value": null, 
-  "doc_type": "Sales Order Item", 
-  "docstatus": 0, 
-  "doctype": "Property Setter", 
   "doctype_or_field": "DocField", 
   "field_name": "warehouse", 
   "modified": "2019-07-21 14:45:30.385015", 
@@ -4809,5 +4792,22 @@
   "property": "hidden", 
   "property_type": "Check", 
   "value": "0"
+ }, 
+ {
+  "_assign": null, 
+  "_comments": null, 
+  "_liked_by": null, 
+  "_user_tags": null, 
+  "default_value": null, 
+  "doc_type": "Sales Order Item", 
+  "docstatus": 0, 
+  "doctype": "Property Setter", 
+  "doctype_or_field": "DocType", 
+  "field_name": null, 
+  "modified": "2019-09-08 19:55:13.599413", 
+  "name": "Sales Order Item-read_only_onload", 
+  "property": "read_only_onload", 
+  "property_type": "Check", 
+  "value": null
  }
 ]
