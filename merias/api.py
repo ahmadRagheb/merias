@@ -122,21 +122,22 @@ def si_for_items_based_on_booked(doc,method):
 		si_no_update_stock(doc, method)
 
 def si_no_update_stock(doc, method):
-	for d in doc.get('items'):
-		if d.sales_order:
-			so = d.sales_order
-			ic = d.item_code
-			i_warehouse = d.warehouse
+	pass
+	# for d in doc.get('items'):
+	# 	if d.sales_order:
+	# 		so = d.sales_order
+	# 		ic = d.item_code
+	# 		i_warehouse = d.warehouse
 
-			r = frappe.db.sql('''SELECT qty from `tabSales Order Item`
-			 where parent='{}' and item_code='{}' and warehouse= '{}' and is_blocked=1'''.format(
-				 so, ic, i_warehouse), as_dict=1)
+	# 		r = frappe.db.sql('''SELECT blocked_qty as qty from `tabSales Order Item`
+	# 		 where parent='{}' and item_code='{}' and warehouse= '{}' and is_blocked=1'''.format(
+	# 			 so, ic, i_warehouse), as_dict=1)
 
-			qty = flt(r[0].qty)
-			if qty > 0 :
-				if qty != d.qty:
-					frappe.throw("Item {} : qty {} not equal to sales order {} : blocked qty {}".format(
-					ic, d.qty, so,qty))
+	# 		qty = flt(r[0].qty)
+	# 		if qty > 0 :
+	# 			if qty != d.qty:
+	# 				frappe.throw("Item {} : qty {} not equal to sales order {} : blocked qty {}".format(
+	# 				ic, d.qty, so,qty))
 
 def si_update_stock(doc, method):
 	""" when create Sales Order for item Pepsi and it has
