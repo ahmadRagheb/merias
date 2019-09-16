@@ -89,15 +89,14 @@ app_license = "MIT"
 
 doc_events = {
 	"Sales Order": {
-		"on_update": "merias.api.check_availability_for_items_based_on_booked",
+		"validate": "merias.api.map_qty_to_blocked_field",
+		"on_update":"merias.api.check_availability_for_items_based_on_booked",
 		"before_insert": "merias.api.so_team",
-		# "on_submit": "merias.api.check_availability_for_items",
 	},"Sales Invoice": {
-		# "on_update": "merias.api.si_for_items_based_on_booked",
 		"on_submit": "merias.api.si_for_items_based_on_booked",
-		# "on_submit": "merias.api.check_availability_for_items",
-	# },"Delivery Note": {
-	# 	"on_submit": "merias.api.check_availability_for_items_based_on_booked",
+	},"Delivery Note": {
+		"on_submit": "merias.api.delivery_note_affect_so_blocked",
+		"on_cancel": "merias.api.delivery_note_cancel",
 	},"Stock Entry": {
 		"on_submit": "merias.api.stock_entry",
 		"validate": "merias.api.workflow",
