@@ -52,27 +52,6 @@ def check_availability_for_items_based_on_booked(doc, method):
 		if  actual_qty < bloked_qty:
 			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
 				d.item_code, d.stock_qty, actual_qty))
-		
-		"""
-
-		# bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
-		# LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-		# smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
-		# (d.item_code, d.warehouse)
-		# )
-		# bloked_qty = flt(bloked_qty[0][0]) or 0
-
-		actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
-			where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
-		actual_qty = flt(actual_qty[0][0]) or 0
-		projected_qty = frappe.db.sql("select sum(projected_qty) from `tabBin` \
-			where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
-		projected_qty = flt(projected_qty[0][0]) or 0
-		allowed_qty = actual_qty - bloked_qty
-		allowed_and_qty = allowed_qty+d.qty
-		if  allowed_and_qty < d.stock_qty:
-			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-				d.item_code, d.stock_qty, allowed_and_qty))"""
 
 def workflow(doc, method):
 	checker = doc.difference_exist
@@ -80,8 +59,9 @@ def workflow(doc, method):
 	if(checker):
 		if(value<100):
 			doc.workflow_state = "New(2t)"
-		elif(100<=value and doc.workflow_state not in ["New(3t)", "Approved By Accounts Manager", "Approved By Branch Manager", "Approved By CEO",
-"Rejected By Accounts Manager","Rejected By Branch Manager", "Rejected By CEO"]) :
+		elif(100<=value and doc.workflow_state not in ["New(3t)", "Approved By Accounts Manager",
+		 "Approved By Branch Manager", "Approved By CEO",
+		"Rejected By Accounts Manager","Rejected By Branch Manager", "Rejected By CEO"]) :
 			doc.workflow_state = "New(3t)"
 	else:
 		doc.workflow_state = "New"
@@ -94,8 +74,8 @@ def stock_entry(doc, method):
 	if doc.purpose == "Material Transfer":
 		for d in doc.get('items'):
 
-			bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
-			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
+			bloked_qty = frappe.db.sql('''SELECT sum(smi.blocked_qty) as qty FROM `tabSales Order` so
+			inner join `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
 			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
 			(d.item_code, d.s_warehouse)
 			)
@@ -123,21 +103,6 @@ def si_for_items_based_on_booked(doc,method):
 
 def si_no_update_stock(doc, method):
 	pass
-	# for d in doc.get('items'):
-	# 	if d.sales_order:
-	# 		so = d.sales_order
-	# 		ic = d.item_code
-	# 		i_warehouse = d.warehouse
-
-	# 		r = frappe.db.sql('''SELECT blocked_qty as qty from `tabSales Order Item`
-	# 		 where parent='{}' and item_code='{}' and warehouse= '{}' and is_blocked=1'''.format(
-	# 			 so, ic, i_warehouse), as_dict=1)
-
-	# 		qty = flt(r[0].qty)
-	# 		if qty > 0 :
-	# 			if qty != d.qty:
-	# 				frappe.throw("Item {} : qty {} not equal to sales order {} : blocked qty {}".format(
-	# 				ic, d.qty, so,qty))
 
 def si_update_stock(doc, method):
 	""" when create Sales Order for item Pepsi and it has
@@ -156,12 +121,9 @@ def si_update_stock(doc, method):
 			# stock_uom  d.stock_qty 
 			sql_stat = "select sum(actual_qty) as qty from `tabBin` where item_code = '{}' and warehouse = '{}'".format(d.item_code, d.warehouse)
 			actual_qty = frappe.db.sql(sql_stat)
-			# projected_qty = frappe.db.sql("select sum(projected_qty) from `tabBin` \
-			# 	where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
 
 			bloked_qty = flt(bloked_qty[0][0]) or 0
 			actual_qty = flt(actual_qty[0][0]) or 0
-			# projected_qty = flt(projected_qty[0][0]) or 0
 			if bloked_qty != 0 :
 				real_blocked_qty = actual_qty - bloked_qty
 				rr = real_blocked_qty + d.qty
@@ -170,15 +132,6 @@ def si_update_stock(doc, method):
 						d.item_code, d.qty, rr))
 		else:
 			frappe.throw("Please select warehouse for item {}".format(d.item_code) )
-		# 	bloked_qty = frappe.db.sql('''SELECT sum(smi.qty) FROM `tabSales Order` so
-		# 	LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-		# 	smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
-		# 	(d.item_code)
-		# 	)
-		# 	actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
-		# 	where item_code = %s", (d.item_code))
-		# 	projected_qty = frappe.db.sql("select sum(projected_qty) from `tabBin` \
-		# 	where item_code = %s", (d.item_code))
 
 
 def generate_unique_customer_number(doc, method):
