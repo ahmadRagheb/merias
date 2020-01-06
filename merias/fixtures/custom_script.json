@@ -2,6 +2,15 @@
  {
   "docstatus": 0, 
   "doctype": "Custom Script", 
+  "dt": "Supplier", 
+  "modified": "2019-11-28 18:04:42.585206", 
+  "name": "Supplier-Client", 
+  "script": "frappe.ui.form.on(\"Supplier\", {\n\trefresh: function (frm) {\n\t\tif(\n\t\t\tfrappe.user.name === \"mohammedrheel@email.com\" ||\n\t\t\tfrappe.user.name === \"hamzamoeen@email.com\" ||\n\t\t\tfrappe.user.name === \"ahmedalakouk@email.com\" ||\n\t\t\tfrappe.user.name === \"bashirisbiqa@email.com\" ||\n\t\t\tfrappe.user.name === \"Mohyisoufia@email.com\" ||\n\t\t\tfrappe.user.name === \"ahmedalati@email.com\" ||\n\t\t\tfrappe.user.name === \"logistic@email.com\" ||\n\t\t\tfrappe.user.name === \"tawfeqiqnejwa@email.com\" ||\n\t\t\tfrappe.user.name === \"ibrahimalati@email.com\" ||\n\t\t\tfrappe.user.name === \"Alati13alati@gmail.com\" ||\n\t\t\tfrappe.user.name === \"hussin.alati1992@gmail.com\" ||\n\t\t\tfrappe.user.name === \"moatazalati@email.com\" ||\n\t\t\tfrappe.user.name === \"mohamedalatti1989@gmail.com\" ||\n\t\t\tfrappe.user.name === \"khalilalati@email.com\" ||\n\t\t\tfrappe.user.name === \"alaty75@gmail.com\" ||\n\t\t\tfrappe.user.name === \"abdulsalamalati@email.com\" ||\n\t\t\tfrappe.user.name === \"kh1955@email.com\" ||\n\t\t\tfrappe.user.name === \"muftah@email.com\" ||\n\t\t\tfrappe.user.name === \"admin2@example.com\" ||\n\t\t\tfrappe.user.name === \"Salem@email.com\" ||\n\t\t\tfrappe.user.name === \"abdulsalamalfaqi@email.com\"\n\t\t){\n\t\t\tfrm.dashboard.wrapper.find(\".form-stats\").css(\"display\", \"none\")\n\t\t}\n\t}\n});", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
   "dt": "Item", 
   "modified": "2019-07-27 04:14:44.546758", 
   "name": "Item-Client", 
@@ -57,9 +66,18 @@
   "docstatus": 0, 
   "doctype": "Custom Script", 
   "dt": "Sales Order", 
-  "modified": "2019-09-08 00:04:55.242183", 
+  "modified": "2020-01-06 14:32:56.717591", 
   "name": "Sales Order-Client", 
-  "script": "var i =false;\n        \nfrappe.ui.form.on('Sales Order Item', {\n   items_remove: function(frm) {\n        console.log(\"delete\");\n        frm.save();\n\n    },\n    items_add: function(frm) {\n        if(i){\n            console.log(\"add new row\");\n            i =false;\n            cur_frm.doc.items.splice(-1,1)\n            frm.refresh_fields();\n            frm.save();\n        }else{\n        i=true;\n        }\n    }\n});\n\n\n", 
+  "script": "// var i =false;\n        \n// frappe.ui.form.on('Sales Order Item', {\n//    items_remove: function(frm) {\n//         console.log(\"delete\");\n//         frm.save();\n\n//     },\n//     items_add: function(frm) {\n//         if(i){\n//             console.log(\"add new row\");\n//             i =false;\n//             cur_frm.doc.items.splice(-1,1)\n//             frm.refresh_fields();\n//             frm.save();\n//         }else{\n//         i=true;\n//         }\n//     }\n// });\n\n\n", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Payment Entry", 
+  "modified": "2020-01-06 14:39:24.044594", 
+  "name": "Payment Entry-Client", 
+  "script": "frappe.ui.form.on('Payment Entry', \"onload\", function(frm) {\n\tif(frappe.user_roles.includes(\"non-employee payment entry\")){\n\tcur_frm.set_query(\"party_type\", function() {\n\t\t\treturn{\n\t\t\t\t\"filters\": {\n\t\t\t\t\t\"name\": [\"in\",[\"Customer\",\"Supplier\",]],\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t\t}\n});", 
   "script_type": "Client"
  }
 ]
