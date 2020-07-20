@@ -7,20 +7,19 @@ from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_t
 from frappe.core.doctype.user.user import get_roles
 from frappe.model.naming import make_autoname
 
-
+#Sales Order hook validate
 def map_qty_to_blocked_field(doc, method):
 	items = doc.get("items")
 	for row in items:
 		row.blocked_qty=row.qty
 
+#Sales Order hook before_insert
 def so_team(doc,method):
 	user = str(frappe.session.data.user)
 	roles = frappe.permissions.get_roles(user)
-
 	valid = False
 	if "Sales Person" in roles:
 		valid = True
-
 	if valid:
 		emp = frappe.get_value('Employee', { 'user_id': user }, 'name')
 		if emp:
@@ -30,29 +29,33 @@ def so_team(doc,method):
 				row.sales_person = sales_person
 				row.allocated_percentage = 100
 
+#Sales Order hook on_update
 def check_availability_for_items_based_on_booked(doc, method):
-	
 	""" when create Sales Order for item Pepsi and it has
 		stock_qty= 5 in store and
 		booked_items=3 then
 		available_qty = stock_qty - booked_items
 		and then verify qty in sales order < or = avaliable """
 	for d in doc.get('items'):
-		sql_stat ='''select sum(soi.blocked_qty) as qty, so.name, soi.item_code from
-		 `tabSales Order Item` as soi inner join `tabSales Order` as so on
-		  so.name = soi.parent and soi.item_code = '{}'  and soi.warehouse = '{}' and soi.is_blocked = 1
-		  and so.status not in ('Cancelled','Completed','Closed') 
-			'''.format(d.item_code , d.warehouse)
-		blocked = frappe.db.sql(sql_stat)
-		bloked_qty = flt(blocked[0][0]) or 0
+		if has_product_bundle(d.item_code):
+			return
+		else:
+			sql_stat ='''select sum(soi.blocked_qty) as qty, so.name, soi.item_code from
+			`tabSales Order Item` as soi inner join `tabSales Order` as so on
+			so.name = soi.parent and soi.item_code = '{}'  and soi.warehouse = '{}' and soi.is_blocked = 1
+			and so.status not in ('Cancelled','Completed','Closed') 
+				'''.format(d.item_code , d.warehouse)
+			blocked = frappe.db.sql(sql_stat)
+			bloked_qty = flt(blocked[0][0]) or 0
 
-		actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
-			where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
-		actual_qty = flt(actual_qty[0][0]) or 0
-		if  actual_qty < bloked_qty:
-			frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-				d.item_code, d.stock_qty, actual_qty))
+			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
+				where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
+			actual_qty = flt(actual_qty[0][0]) or 0
+			if  actual_qty < bloked_qty:
+				frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
+					d.item_code, d.stock_qty, actual_qty))
 
+#Stock Entry validate
 def workflow(doc, method):
 	checker = doc.difference_exist
 	value = flt(doc.difference_value)
@@ -66,6 +69,7 @@ def workflow(doc, method):
 	else:
 		doc.workflow_state = "New"
 
+#Stock Entry on_submit
 def stock_entry(doc, method):
 	""" by defult system check if item qty in warehouse >= transfered qty from that warehouse
 		if okay then we add transfer with actuall qty then this will give us the totall
@@ -94,7 +98,7 @@ def stock_entry(doc, method):
 				more than stock available quantity {} for warehouse {}".format(
 					d.item_code, d.transfer_qty, allowed_qty, d.s_warehouse))
 
-
+#Sales Invoice on_submit
 def si_for_items_based_on_booked(doc,method):
 	if doc.update_stock == 1:
 		si_update_stock(doc, method)
@@ -133,10 +137,7 @@ def si_update_stock(doc, method):
 		else:
 			frappe.throw("Please select warehouse for item {}".format(d.item_code) )
 
-
-def generate_unique_customer_number(doc, method):
-	doc.customer_number = make_autoname('.#####')
-
+# Delivery Note on_submit
 def delivery_note_affect_so_blocked(doc, method):
 	if doc.is_return == 0:
 		for d in doc.get('items'):
@@ -151,6 +152,7 @@ def delivery_note_affect_so_blocked(doc, method):
 				so.save()
 				frappe.db.commit()
 
+# Delivery Note on_cancel
 def delivery_note_cancel(doc, method):
 	if doc.is_return == 0:
 		for d in doc.get('items'):
@@ -164,3 +166,12 @@ def delivery_note_cancel(doc, method):
 							frappe.throw("Blocked qty is bigger than qty in sales order")
 				so.save()
 				frappe.db.commit()
+
+# Customer before_insert
+def generate_unique_customer_number(doc, method):
+	doc.customer_number = make_autoname('.#####')
+
+
+def has_product_bundle(item_code):
+	return frappe.db.sql("""select name from `tabProduct Bundle`
+		where new_item_code=%s and docstatus != 2""", item_code)
