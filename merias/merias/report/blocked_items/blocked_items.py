@@ -26,30 +26,34 @@ def get_columns():
 def get_data(filters):
 	conditions = get_conditions(filters)
 
-	dn = frappe.db.sql("""select against_sales_order , item_code, sum(qty)
-	from `tabDelivery Note Item` where docstatus =1 and against_sales_order IS NOT NULL
-	group by against_sales_order""", as_dict=1)
 
-	dn_dict = {}
-	for item in dn:
-	   against_sales_order = item.pop('against_sales_order')
-	   dn_dict[against_sales_order] = item
+	# dn = frappe.db.sql("""select dni.against_sales_order , dni.item_code, sum(dni.qty) as qty 
+	# from `tabDelivery Note Item` dni Inner JOIN `tabDelivery Note` dn on dni.parent = dn.name
+	# 	and dn.docstatus =1 and dni.against_sales_order IS NOT NULL and dn.is_return = 0 
+	# 	group by dni.against_sales_order """, as_dict=1)
+	# dn = frappe.db.sql("""select against_sales_order , item_code, sum(qty) as qty
+	# from `tabDelivery Note Item` where docstatus =1 and against_sales_order IS NOT NULL
+	# group by against_sales_order""", as_dict=1)
 
-	so = frappe.db.sql("""SELECT so.name, smi.item_code, smi.qty FROM `tabSales Order` so
+	# dn_dict = {}
+	# for item in dn:
+	# 	against_sales_order = item.pop('against_sales_order')
+	# 	dn_dict[against_sales_order] = item
+
+	so = frappe.db.sql("""SELECT so.name, smi.item_code, smi.blocked_qty as qty FROM `tabSales Order` so
 	LEFT JOIN `tabSales Order Item` smi ON  so.name = smi.parent and  smi.is_blocked = 1
 	and so.status not in ('Cancelled','Completed', 'Draft', 'Closed')
-	 where smi.qty IS NOT NULL""", as_dict=1)
+		where smi.blocked_qty IS NOT NULL and smi.blocked_qty != 0 """, as_dict=1)
 	so_dict = {}
 	for item in so:
-	   # name = item.pop('name')
-	   name = item['name']
-	   so_dict[name] = item
+		# name = item.pop('name')
+		name = item['name']
+		so_dict[name] = item
 
-	for so in so_dict :
-		if so in dn_dict:
-			qty = dn_dict[so].qty
-			print(qty)
-			so_dict[so].qty = flt(so_dict[so].qty) - flt(qty)
+	# for so in so_dict :
+	# 	if so in dn_dict:
+	# 		qty = dn_dict[so].qty
+	# 		so_dict[so].blocked_qty = flt(so_dict[so].blocked_qty) - flt(qty)
 
 	result = [x.values() for x in so_dict.values()]
 
