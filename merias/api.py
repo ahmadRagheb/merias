@@ -38,7 +38,25 @@ def check_availability_for_items_based_on_booked(doc, method):
 		and then verify qty in sales order < or = avaliable """
 	for d in doc.get('items'):
 		if has_product_bundle(d.item_code):
-			return
+			for p in doc.get("packed_items"):
+				if p.parent_item == d.item_code:
+					p.blocked_qty=p.qty
+					p.is_blocked = 1
+					sql_stat ='''select sum(pi.blocked_qty) as qty, so.name, pi.item_code from
+								`tabPacked Item` as pi inner join `tabSales Order` as so on
+								so.name = pi.parent and pi.item_code = '{}'  and pi.warehouse = '{}' and pi.is_blocked = 1
+								and so.status not in ('Cancelled','Completed','Closed') '''.format(p.item_code , p.warehouse)
+
+					blocked = frappe.db.sql(sql_stat)
+					bloked_qty = flt(blocked[0][0]) or 0
+					actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
+						where item_code = %s and warehouse = %s", (p.item_code, p.warehouse))
+					actual_qty = flt(actual_qty[0][0]) or 0
+
+					if  actual_qty < bloked_qty:
+						frappe.throw("You can't order item {} in packed item list from warehouse {}, because ordered quantity {} is more than stock available quantity {}".format(
+							d.item_code, p.warehouse, p.stock_qty, actual_qty))
+
 		else:
 			sql_stat ='''select sum(soi.blocked_qty) as qty, so.name, soi.item_code from
 			`tabSales Order Item` as soi inner join `tabSales Order` as so on
@@ -51,9 +69,10 @@ def check_availability_for_items_based_on_booked(doc, method):
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
 				where item_code = %s and warehouse = %s", (d.item_code, d.warehouse))
 			actual_qty = flt(actual_qty[0][0]) or 0
+
 			if  actual_qty < bloked_qty:
-				frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-					d.item_code, d.stock_qty, actual_qty))
+				frappe.throw("You can't order item {} from warehouse {}, because ordered quantity {} is more than stock available quantity {}".format(
+					d.item_code, d.warehouse,  d.stock_qty, actual_qty))
 
 #Stock Entry validate
 def workflow(doc, method):
@@ -102,76 +121,125 @@ def stock_entry(doc, method):
 def si_for_items_based_on_booked(doc,method):
 	if doc.update_stock == 1:
 		si_update_stock(doc, method)
-	else:
-		si_no_update_stock(doc, method)
-
-def si_no_update_stock(doc, method):
-	pass
 
 def si_update_stock(doc, method):
-	""" when create Sales Order for item Pepsi and it has
-		stock_qty= 5 in store and
-		booked_items=3 then
-		available_qty = stock_qty - booked_items
-		and then verify qty in sales order < or = avaliable """
+	""" when create Sales Order for item Pepsi and it has stock_qty= 5 in store and booked_items=3 then
+		available_qty = stock_qty - booked_items and then verify qty in sales order < or = avaliable """
+		
 	for d in doc.get('items'):
 		if d.warehouse:
-			bloked_qty = frappe.db.sql('''SELECT sum(smi.blocked_qty) FROM `tabSales Order` so
-			LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
-			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
-			(d.item_code, d.warehouse)
-			)
+			if has_product_bundle(d.item_code):
+				for p in doc.get("packed_items"):
+					if p.parent_item == d.item_code:
+						bloked_qty = frappe.db.sql('''SELECT sum(pi.blocked_qty) FROM `tabSales Order` so
+						LEFT JOIN `tabPacked Item` pi ON pi.item_code = %s and so.name = pi.parent and
+						pi.warehouse = %s and pi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
+						(p.item_code, p.warehouse))
 
-			# stock_uom  d.stock_qty 
-			sql_stat = "select sum(actual_qty) as qty from `tabBin` where item_code = '{}' and warehouse = '{}'".format(d.item_code, d.warehouse)
-			actual_qty = frappe.db.sql(sql_stat)
+						# stock_uom  d.stock_qty 
+						sql_stat = "select sum(actual_qty) as qty from `tabBin` where item_code = '{}' and warehouse = '{}'".format(
+							p.item_code, p.warehouse)
+						actual_qty = frappe.db.sql(sql_stat)
+						bloked_qty = flt(bloked_qty[0][0]) or 0
+						actual_qty = flt(actual_qty[0][0]) or 0
+						if bloked_qty != 0 :
+							real_blocked_qty = actual_qty - bloked_qty
+							rr = real_blocked_qty + p.qty
+							if p.qty > real_blocked_qty :
+								frappe.throw("You can't order item {} in packed Item from warehouse {}, because ordered quantity {} is more than stock available quantity {}".format(
+									p.item_code, p.warehouse, p.qty, rr))
 
-			bloked_qty = flt(bloked_qty[0][0]) or 0
-			actual_qty = flt(actual_qty[0][0]) or 0
-			if bloked_qty != 0 :
-				real_blocked_qty = actual_qty - bloked_qty
-				rr = real_blocked_qty + d.qty
-				if d.qty > real_blocked_qty :
-					frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
-						d.item_code, d.qty, rr))
+			else:
+				bloked_qty = frappe.db.sql('''SELECT sum(smi.blocked_qty) FROM `tabSales Order` so
+				LEFT JOIN `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
+				smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
+				(d.item_code, d.warehouse))
+
+				# stock_uom  d.stock_qty 
+				sql_stat = "select sum(actual_qty) as qty from `tabBin` where item_code = '{}' and warehouse = '{}'".format(d.item_code, d.warehouse)
+				actual_qty = frappe.db.sql(sql_stat)
+
+				bloked_qty = flt(bloked_qty[0][0]) or 0
+				actual_qty = flt(actual_qty[0][0]) or 0
+				if bloked_qty != 0 :
+					real_blocked_qty = actual_qty - bloked_qty
+					rr = real_blocked_qty + d.qty
+					if d.qty > real_blocked_qty :
+						frappe.throw("You can't order item {} because ordered quantity {} is more than stock available quantity {}".format(
+							d.item_code, d.qty, rr))
 		else:
 			frappe.throw("Please select warehouse for item {}".format(d.item_code) )
 
 # Delivery Note on_submit
 def delivery_note_affect_so_blocked(doc, method):
 	if doc.is_return == 0:
-		for d in doc.get('items'):
-			if d.against_sales_order:
-				so = frappe.get_doc("Sales Order",d.against_sales_order)
-				soi = so.get("items")
-				for row in soi:
-					if row.warehouse == d.warehouse and row.item_code == d.item_code:
-						row.blocked_qty = row.blocked_qty - d.qty  
-						if row.blocked_qty <0 :
-							frappe.throw("Blocked qty is bigger than qty in sales order")
-				so.save()
-				frappe.db.commit()
+		for d in doc.get('items'): # d for dn items
+			if d.against_sales_order: # if it's against sales order
+				if has_product_bundle(d.item_code):
+					bundle_dn_item(doc, d, True)
+				else:
+					so = frappe.get_doc("Sales Order",d.against_sales_order) # get so 
+					soi = so.get("items")  
+					for row in soi: # for loop this so items
+						if row.warehouse == d.warehouse and row.item_code == d.item_code:
+							row.blocked_qty = row.blocked_qty - d.qty  
+							if row.blocked_qty <0 :
+								frappe.throw("Blocked qty is bigger than qty in sales order")
+					so.save()
+					frappe.db.commit()
 
 # Delivery Note on_cancel
 def delivery_note_cancel(doc, method):
 	if doc.is_return == 0:
 		for d in doc.get('items'):
 			if d.against_sales_order:
-				so = frappe.get_doc("Sales Order",d.against_sales_order)
-				soi = so.get("items")
-				for row in soi:
-					if row.warehouse == d.warehouse and row.item_code == d.item_code:
-						row.blocked_qty = row.blocked_qty + d.qty  
-						if row.blocked_qty <0 :
-							frappe.throw("Blocked qty is bigger than qty in sales order")
-				so.save()
-				frappe.db.commit()
+				if has_product_bundle(d.item_code):
+					bundle_dn_item(doc, d, False)
+				else:
+					so = frappe.get_doc("Sales Order",d.against_sales_order)
+					soi = so.get("items")
+					for row in soi:
+						if row.warehouse == d.warehouse and row.item_code == d.item_code:
+							row.blocked_qty = row.blocked_qty + d.qty  
+							if row.blocked_qty <0 :
+								frappe.throw("Blocked qty is bigger than qty in sales order")
+					so.save()
+		frappe.db.commit()
+
 
 # Customer before_insert
 def generate_unique_customer_number(doc, method):
 	doc.customer_number = make_autoname('.#####')
 
-
 def has_product_bundle(item_code):
 	return frappe.db.sql("""select name from `tabProduct Bundle`
 		where new_item_code=%s and docstatus != 2""", item_code)
+
+def bundle_dn_item(doc, d, remove_qty):
+	for p in doc.get("packed_items"): # if this item is bundel we search on packed items components
+		if p.parent_item == d.item_code:
+			so = frappe.get_doc("Sales Order",d.against_sales_order) # get so 
+			soi = so.get("items")  
+			for row in soi: # for loop this so items
+				if row.warehouse == d.warehouse and row.item_code == d.item_code:
+					if remove_qty:
+						row.blocked_qty = row.blocked_qty - d.qty
+					else:
+						row.blocked_qty = row.blocked_qty + d.qty
+
+					if row.blocked_qty <0 :
+						frappe.throw("Blocked qty is bigger than qty in sales order")
+			sopi = so.get("packed_items")  
+			for pi_row in sopi:
+				if pi_row.warehouse == p.warehouse and pi_row.item_code == p.item_code:
+					if remove_qty:
+						pi_row.blocked_qty = pi_row.blocked_qty - p.qty  
+					else:
+						pi_row.blocked_qty = pi_row.blocked_qty + p.qty  
+
+
+					if pi_row.blocked_qty <0 :
+						frappe.throw("Blocked qty is bigger than qty in sales order")
+			so.save()
+	frappe.db.commit()
+
