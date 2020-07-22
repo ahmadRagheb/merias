@@ -175,36 +175,35 @@ def delivery_note_affect_so_blocked(doc, method):
 	if doc.is_return == 0:
 		for d in doc.get('items'): # d for dn items
 			if d.against_sales_order: # if it's against sales order
+				so = frappe.get_doc("Sales Order",d.against_sales_order) # get so 
+				soi = so.get("items")  
+				for row in soi: # for loop this so items
+					if row.warehouse == d.warehouse and row.item_code == d.item_code:
+						row.blocked_qty = row.blocked_qty - d.qty  
+						if row.blocked_qty <0 :
+							frappe.throw("Blocked qty is bigger than qty in sales order")
+				so.save()
+				frappe.db.commit()
 				if has_product_bundle(d.item_code):
 					bundle_dn_item(doc, d, True)
-				else:
-					so = frappe.get_doc("Sales Order",d.against_sales_order) # get so 
-					soi = so.get("items")  
-					for row in soi: # for loop this so items
-						if row.warehouse == d.warehouse and row.item_code == d.item_code:
-							row.blocked_qty = row.blocked_qty - d.qty  
-							if row.blocked_qty <0 :
-								frappe.throw("Blocked qty is bigger than qty in sales order")
-					so.save()
-					frappe.db.commit()
 
 # Delivery Note on_cancel
 def delivery_note_cancel(doc, method):
 	if doc.is_return == 0:
 		for d in doc.get('items'):
 			if d.against_sales_order:
+				so = frappe.get_doc("Sales Order",d.against_sales_order)
+				soi = so.get("items")
+				for row in soi:
+					if row.warehouse == d.warehouse and row.item_code == d.item_code:
+						row.blocked_qty = row.blocked_qty + d.qty  
+						if row.blocked_qty <0 :
+							frappe.throw("Blocked qty is bigger than qty in sales order")
+				so.save()
+				frappe.db.commit()
 				if has_product_bundle(d.item_code):
 					bundle_dn_item(doc, d, False)
-				else:
-					so = frappe.get_doc("Sales Order",d.against_sales_order)
-					soi = so.get("items")
-					for row in soi:
-						if row.warehouse == d.warehouse and row.item_code == d.item_code:
-							row.blocked_qty = row.blocked_qty + d.qty  
-							if row.blocked_qty <0 :
-								frappe.throw("Blocked qty is bigger than qty in sales order")
-					so.save()
-		frappe.db.commit()
+
 
 
 # Customer before_insert
@@ -219,17 +218,17 @@ def bundle_dn_item(doc, d, remove_qty):
 	for p in doc.get("packed_items"): # if this item is bundel we search on packed items components
 		if p.parent_item == d.item_code:
 			so = frappe.get_doc("Sales Order",d.against_sales_order) # get so 
-			soi = so.get("items")  
-			for row in soi: # for loop this so items
-				if row.warehouse == d.warehouse and row.item_code == d.item_code:
-					if remove_qty:
-						row.blocked_qty = row.blocked_qty - d.qty
-					else:
-						row.blocked_qty = row.blocked_qty + d.qty
+			# soi = so.get("items")  
+			# for row in soi: # for loop this so items
+			# 	if row.warehouse == d.warehouse and row.item_code == d.item_code:
+			# 		if remove_qty:
+			# 			row.blocked_qty = row.blocked_qty - d.qty
+			# 		else:
+			# 			row.blocked_qty = row.blocked_qty + d.qty
 
-					if row.blocked_qty <0 :
-						frappe.throw("Blocked qty is bigger than qty in sales order")
-			sopi = so.get("packed_items")  
+			# 		if row.blocked_qty <0 :
+			# 			frappe.throw("Blocked qty is bigger than qty in sales order")
+			sopi = so.get("packed_items")
 			for pi_row in sopi:
 				if pi_row.warehouse == p.warehouse and pi_row.item_code == p.item_code:
 					if remove_qty:
