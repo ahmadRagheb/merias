@@ -97,25 +97,31 @@ def stock_entry(doc, method):
 	if doc.purpose == "Material Transfer":
 		for d in doc.get('items'):
 
-			bloked_qty = frappe.db.sql('''SELECT sum(smi.blocked_qty) as qty FROM `tabSales Order` so
+			soi_bloked_qty = frappe.db.sql('''SELECT sum(smi.blocked_qty) as qty FROM `tabSales Order` so
 			inner join `tabSales Order Item` smi ON smi.item_code = %s and so.name = smi.parent and
 			smi.warehouse = %s and smi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
-			(d.item_code, d.s_warehouse)
-			)
+			(d.item_code, d.s_warehouse))
+			soi_bloked_qty = flt(soi_bloked_qty[0][0]) or 0
 
-			blocked_qty = flt(bloked_qty[0][0]) or 0
+			sopi = frappe.db.sql('''SELECT sum(pi.blocked_qty) as qty FROM `tabSales Order` so
+			inner join `tabPacked Item` pi ON pi.item_code = %s and so.name = pi.parent and
+			pi.warehouse = %s and pi.is_blocked = 1 and so.status not in ('Cancelled','Completed','Closed') ''',
+			(d.item_code, d.s_warehouse))
+			sopi = flt(sopi[0][0]) or 0
+
+			blocked_qty = soi_bloked_qty + sopi
 
 			actual_qty = frappe.db.sql("select sum(actual_qty) from `tabBin` \
 				where item_code = '{}' and warehouse = '{}' ".format(d.item_code, d.s_warehouse))
-
 			actual_qty = flt(actual_qty[0][0]) or 0
 
 			allowed_qty = (d.transfer_qty + actual_qty) - blocked_qty
 
 			if actual_qty < blocked_qty:
 				frappe.throw("You can't Transfer item {} because transfer quantity {} is \
-				more than stock available quantity {} for warehouse {}".format(
-					d.item_code, d.transfer_qty, allowed_qty, d.s_warehouse))
+				more than stock available quantity {} for warehouse {} {} ".format(
+					d.item_code, d.transfer_qty, allowed_qty, d.s_warehouse, 
+					"<br><br> Note: Blocked qty for this item: {}".format(blocked_qty)))
 
 #Sales Invoice on_submit
 def si_for_items_based_on_booked(doc,method):
@@ -203,8 +209,6 @@ def delivery_note_cancel(doc, method):
 				frappe.db.commit()
 				if has_product_bundle(d.item_code):
 					bundle_dn_item(doc, d, False)
-
-
 
 # Customer before_insert
 def generate_unique_customer_number(doc, method):
