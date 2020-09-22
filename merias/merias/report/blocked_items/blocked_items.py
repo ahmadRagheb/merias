@@ -58,7 +58,7 @@ def get_data(filters):
 	# 		qty = dn_dict[so].qty
 	# 		so_dict[so].blocked_qty = flt(so_dict[so].blocked_qty) - flt(qty)
 
-	result = [[x.namem, x.item_code, x.qty] for x in so]
+	result = [[x.name, x.item_code, x.qty] for x in so]
 
 	return result
 
