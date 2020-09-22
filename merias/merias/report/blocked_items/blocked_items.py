@@ -40,22 +40,25 @@ def get_data(filters):
 	# 	against_sales_order = item.pop('against_sales_order')
 	# 	dn_dict[against_sales_order] = item
 
-	so = frappe.db.sql("""SELECT so.name, smi.item_code, smi.blocked_qty as qty FROM `tabSales Order` so
-	LEFT JOIN `tabSales Order Item` smi ON  so.name = smi.parent and  smi.is_blocked = 1
-	and so.status not in ('Cancelled','Completed', 'Draft', 'Closed')
-		where smi.blocked_qty IS NOT NULL and smi.blocked_qty != 0 """, as_dict=1)
-	so_dict = {}
-	for item in so:
-		# name = item.pop('name')
-		name = item['name']
-		so_dict[name] = item
+	so = frappe.db.sql("""
+		SELECT so.name, smi.item_code, smi.blocked_qty as qty
+		FROM `tabSales Order` so
+		LEFT JOIN `tabSales Order Item` smi ON  so.name = smi.parent
+		WHERE smi.is_blocked=1 and so.status not in ('Cancelled','Completed', 'Draft', 'Closed') and
+			  smi.blocked_qty IS NOT NULL and smi.blocked_qty != 0
+	""", as_dict=1)
+	# so_dict = {}
+	# for item in so:
+	# 	# name = item.pop('name')
+	# 	name = item['name']
+	# 	so_dict[name] = item
 
 	# for so in so_dict :
 	# 	if so in dn_dict:
 	# 		qty = dn_dict[so].qty
 	# 		so_dict[so].blocked_qty = flt(so_dict[so].blocked_qty) - flt(qty)
 
-	result = [x.values() for x in so_dict.values()]
+	result = [[x.namem, x.item_code, x.qty] for x in so]
 
 	return result
 
