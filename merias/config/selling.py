@@ -1,20 +1,20 @@
 from __future__ import unicode_literals
 from frappe import _
-import frappe
 
 
 def get_data():
-    config = [
+    return [
         {
-            "label": _("Other Reports "),
+            "label": _("Other Reports"),
+            "icon": "fa fa-list",
             "items": [
                 {
                     "type": "report",
-                    "name": "Blocked Items",
-                    "doctype": "Sales Order",
                     "is_query_report": True,
-                },
+                    "name": "Blocked Items",
+                    "doctype": "Sales Order"
+                }
             ]
         },
+
     ]
-    return config
