@@ -246,3 +246,31 @@ def bundle_dn_item(doc, d, remove_qty):
 			so.save()
 	frappe.db.commit()
 
+
+
+@frappe.whitelist()
+def cost_center_check(doc, method):
+	user = frappe.session.user
+	user_mail = frappe.session.user_mail
+	up_list = frappe.get_all("User Permission", filters={
+						'user': user,
+						"allow": "Cost Center",
+						"is_default": 1}, 
+					fields=['for_value'], ignore_permissions=True)
+	if up_list:
+		for row in doc.items:
+			row.cost_center = up_list[0].for_value
+
+
+
+@frappe.whitelist()
+def cost_center_check_api():
+	user = frappe.session.user
+	user_mail = frappe.session.user_mail
+	up_list = frappe.get_all("User Permission", filters={
+						'user': user,
+						"allow": "Cost Center",
+						"is_default": 1}, 
+					fields=['for_value'], ignore_permissions=True)
+	if up_list:
+		return up_list[0].for_value
