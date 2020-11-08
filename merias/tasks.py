@@ -31,7 +31,7 @@ def hourly():
 		JOIN `tabSales Order Item` smi ON so.name = smi.parent and
 		smi.is_blocked = 1 and so.status not in ('Cancelled','Completed', 'Draft', 'Closed') ''',as_dict=True)
 	count = len(blocked_so)
-	action_button = """<button onclick="action_so">اضغط هنا</button>"""
+	action_button = """<button onclick="action_so()">اضغط هنا</button>"""
 	message = _(u"""يوجد طلبات بيع ببضاعة محجوزة لم يتم مراجعتها عددها {} للمزيد من المعلومات""".format(count))
 
 	user_list = frappe.get_all('User',filters={'enabled':1})
