@@ -17,6 +17,7 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/merias/css/merias.css"
 # app_include_js = "/assets/merias/js/merias.js"
+app_include_js = "/assets/merias/js/merias.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/merias/css/merias.css"
