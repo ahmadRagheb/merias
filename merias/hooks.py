@@ -17,6 +17,7 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/merias/css/merias.css"
 # app_include_js = "/assets/merias/js/merias.js"
+app_include_js = "/assets/merias/js/merias.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/merias/css/merias.css"
@@ -27,6 +28,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+# doctype_js = {"Delivery Note" : "public/js/deliver_note.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -96,6 +98,7 @@ doc_events = {
 		"on_submit": "merias.api.si_for_items_based_on_booked",
 	},"Delivery Note": {
 		"on_submit": "merias.api.delivery_note_affect_so_blocked",
+		"validate":  "merias.api.cost_center_check",
 		"on_cancel": "merias.api.delivery_note_cancel",
 	},"Stock Entry": {
 		"on_submit": "merias.api.stock_entry",
