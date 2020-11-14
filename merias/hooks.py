@@ -162,5 +162,5 @@ scheduler_events = {
 #TODO add filter to custom feilds and property setter the files we only need
 #TODO add workflow state by filter only one is active , also add workflow states
 
-fixtures = ["Custom Script","Custom Field", "Property Setter"]
+fixtures = ["Custom Field", "Property Setter"]
 #fixtures = ["Custom Script","Custom Field", "Workflow State", "Workflow", "Role","DocPerm", "User Permission", "User Permission for Page and Report", "User", "Employee" ]
