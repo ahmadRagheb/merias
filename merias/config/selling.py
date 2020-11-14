@@ -5,7 +5,7 @@ from frappe import _
 def get_data():
     return [
         {
-            "label": _("Blocked Items"),
+            "label": _("Other Reports"),
             "icon": "fa fa-list",
             "items": [
                 {
@@ -22,5 +22,4 @@ def get_data():
                 }
             ]
         },
-
     ]
