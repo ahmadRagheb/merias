@@ -2,6 +2,17 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Release Blocked Item', {
+	refresh: function(frm) {
+		cur_frm.set_query("sales_order", function() {
+			return {
+				"filters": {
+					status: ["not in",['Cancelled','Completed', 'Draft', 'Closed']]
+				}
+				
+			};
+		});
+
+	},
     sales_order: function(frm) {
 		if (frm.doc.sales_order){
 			frm.items = []
