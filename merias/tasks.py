@@ -8,25 +8,12 @@ import frappe.handler
 import frappe.client
 from frappe.utils import cstr, flt, getdate, cint, nowdate, add_days, get_link_to_form
 
-
-def hourly2():
-	blocked_so = frappe.db.sql('''SELECT so.name FROM `tabSales Order` so
-		JOIN `tabSales Order Item` smi ON so.name = smi.parent and
-		smi.is_blocked = 1 and so.status not in ('Cancelled','Completed') ''',as_dict=True)
-
-	so = tuple([x.name for x in blocked_so ])
-	message = _(u"يوجد طلبات بيع ببضاعة محجوزة لم يتم مراجعتها {}".format(so))
-	user_list = frappe.get_all('User',filters={'enabled':1})
-	for user in user_list:
-		user_obj = frappe.get_doc('User',user.name)
-		roles = [ur.role for ur in user_obj.roles]
-		if ("Sales User" in roles) or ("Sales Manager" in roles):
-			frappe.publish_realtime(event='eval_js', message='frappe.msgprint("{0}")'.format(message),
-				user=user['name'])
-
-
 def hourly():
-
+	""" Schedual task Triggered hourly will send notification to
+	Sales User and Sales Manager , with all Sales order contains
+	Blocked Items 	
+	"""
+	
 	blocked_so = frappe.db.sql('''SELECT so.name FROM `tabSales Order` so
 		JOIN `tabSales Order Item` smi ON so.name = smi.parent and
 		smi.is_blocked = 1 and so.status not in ('Cancelled','Completed', 'Draft', 'Closed') ''',as_dict=True)
