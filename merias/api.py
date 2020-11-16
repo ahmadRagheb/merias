@@ -9,9 +9,12 @@ from frappe.model.naming import make_autoname
 
 #Sales Order hook validate
 def map_qty_to_blocked_field(doc, method):
+	""" Assign blocked qty to be equal to stock qty , so we evaluate this based 
+	on the item basic stock uom and avoid any complex logic in checking item availablity"""
+
 	items = doc.get("items")
 	for row in items:
-		row.blocked_qty=row.qty
+		row.blocked_qty=row.stock_qty
 
 #Sales Order hook before_insert
 def so_team(doc,method):
@@ -55,7 +58,7 @@ def check_availability_for_items_based_on_booked(doc, method):
 
 					if  actual_qty < bloked_qty:
 						frappe.throw("You can't order item {} in packed item list from warehouse {}, because ordered quantity {} is more than stock available quantity {}".format(
-							d.item_code, p.warehouse, p.stock_qty, actual_qty))
+							d.item_code, p.warehouse, p.qty, actual_qty))
 
 		else:
 			sql_stat ='''select sum(soi.blocked_qty) as qty, so.name, soi.item_code from
