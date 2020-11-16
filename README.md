@@ -1,6 +1,6 @@
 ## Merias
 
-Simple custoization to blocked items in Sales Order. to read more please refer to [docs/Selling/sales_order.md](Documentation)
+Simple custoization to blocked items in Sales Order. to read more please refer to [Documentation](docs/Selling/sales_order.md)
 
 
 This feature applied to:
