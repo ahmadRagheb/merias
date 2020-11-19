@@ -98,7 +98,6 @@ doc_events = {
 		"on_submit": "merias.api.si_for_items_based_on_booked",
 	},"Delivery Note": {
 		"on_submit": "merias.api.delivery_note_affect_so_blocked",
-		"validate":  "merias.api.cost_center_check",
 		"on_cancel": "merias.api.delivery_note_cancel",
 	},"Stock Entry": {
 		"on_submit": "merias.api.stock_entry",

@@ -40,7 +40,6 @@ hourly task To msgprint how much sales order is blocked in Sales order with a re
  - on_submit : "merias.api.delivery_note_affect_so_blocked" 
   free qty from blocked_qty in SO because we deliver .
   
- - validate" :  "merias.api.cost_center_check"
  NEED DOCS
  
  - on_cancel : "merias.api.delivery_note_cancel"
